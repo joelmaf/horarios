@@ -8,3 +8,5 @@ langchain_huggingface
 langchain_qdrant
 qdrant-client
 python-dotenv
+pymongo[srv]
+streamlit_option_menu

@@ -12,7 +12,7 @@ def app():
     # Função para carregar arquivos JSON
     def carregar_json(arquivo):
         if os.path.exists(arquivo):
-            with open(arquivo, 'r') as json_file:
+            with open(arquivo, 'r', encoding='utf-8') as json_file:
                 return json.load(json_file)
         return None
 
@@ -22,7 +22,7 @@ def app():
         if not os.path.exists(arquivo):
             st.warning(f"Disciplinas do curso {course_name} não cadastradas.")
             st.stop()
-        with open(arquivo, 'r') as json_file:
+        with open(arquivo, 'r', encoding='utf-8') as json_file:
             disciplinas_json = json.load(json_file)
         if disciplinas_json:
             return pd.DataFrame(disciplinas_json['disciplinas'])
@@ -36,7 +36,7 @@ def app():
 
         # Verificar se o arquivo JSON existe
         if os.path.exists(caminho_arquivo):
-            with open(caminho_arquivo, "r") as f:
+            with open(caminho_arquivo, "r", encoding='utf-8') as f:
                 json_decisoes = json.load(f)
 
             # Inicializar 'decisoes' no session_state se ainda não estiver presente
@@ -94,7 +94,7 @@ def app():
     # Função para carregar os dados do arquivo JSON, se existir
     def carregar_dados_alocacao(course_name):
         if os.path.exists(f'horarios/{course_name}_alocacoes.json'):
-            with open(f'horarios/{course_name}_alocacoes.json', 'r') as json_file:
+            with open(f'horarios/{course_name}_alocacoes.json', 'r', encoding='utf-8') as json_file:
                 dados = json.load(json_file)
                 return dados
         return None
@@ -121,7 +121,7 @@ def app():
                             "dia": day,
                             "modalidade": modalidade
                         })
-        with open(f'horarios/{course_name}_alocacoes.json', 'w') as json_file:
+        with open(f'horarios/{course_name}_alocacoes.json', 'w', encoding='utf-8') as json_file:
             json.dump(data_para_salvar, json_file, indent=4)
 
     # Função para carregar os dados do JSON no session_state
@@ -156,7 +156,7 @@ def app():
             if arquivo.endswith('_alocacoes.json'):
                 caminho_arquivo = os.path.join(diretorio_horarios, arquivo)
                 
-                with open(caminho_arquivo, 'r') as json_file:
+                with open(caminho_arquivo, 'r', encoding='utf-8') as json_file:
                     dados = json.load(json_file)
                     nome_curso = dados.get("curso", "Curso desconhecido")
                     
@@ -201,10 +201,10 @@ def app():
         caminho_arquivo = os.path.join(pasta_juncao, nome_arquivo)
 
         # Salvar o JSON em um arquivo
-        with open(caminho_arquivo, "w") as f:
+        with open(caminho_arquivo, "w", encoding='utf-8') as f:
             json.dump(list(st.session_state['decisoes'].values()), f, ensure_ascii=False, indent=4)
 
-        st.experimental_rerun()
+        st.rerun()
 
     def registrar_conflitos(conflitos):
         if 'decisoes' not in st.session_state:
@@ -285,7 +285,7 @@ def app():
             if arquivo.endswith('_alocacoes.json'):
                 caminho_arquivo = os.path.join(diretorio_horarios, arquivo)
                 
-                with open(caminho_arquivo, 'r') as json_file:
+                with open(caminho_arquivo, 'r', encoding='utf-8') as json_file:
                     dados = json.load(json_file)
                     nome_curso = dados.get("curso", "Curso desconhecido")
                     
@@ -598,7 +598,7 @@ def app():
             st.session_state['registros'][id_curso_selecionado] = {}
         carregar_dados_no_session_state(output, id_curso_selecionado)
 
-        with open(f'horarios/{curso_selecionado}_alocacoes.json', 'w') as json_file:
+        with open(f'horarios/{curso_selecionado}_alocacoes.json', 'w', encoding='utf-8') as json_file:
             json.dump(output, json_file, indent=4)
 
 
@@ -688,7 +688,7 @@ def app():
                     cols[i + 1].markdown(f"<div class='schedule'>{data}</div>", unsafe_allow_html=True)
                     if cols[i + 1].button("🗑️",  key=f"desalocar_{time_slot}_{day}"):
                         deallocate_schedule(id_curso_selecionado, periodo_selecionado, day, time_slot)
-                        st.experimental_rerun()
+                        st.rerun()
                 else:
                     cols[i + 1].markdown("<div class='schedule'>-</div>", unsafe_allow_html=True)
 
@@ -794,7 +794,7 @@ def app():
         conflitos = []
         for arquivo in os.listdir(diretorio_horarios):
             if arquivo.endswith('_alocacoes.json') and arquivo != file:
-                with open(os.path.join(diretorio_horarios, arquivo), 'r') as json_file:
+                with open(os.path.join(diretorio_horarios, arquivo), 'r', encoding='utf-8') as json_file:
                     dados = json.load(json_file)
                     curso = dados["curso"]
                     for periodo, alocacoes in dados["periodos"].items():
@@ -840,7 +840,7 @@ def app():
         pasta_juncao = "juncoes"
         nome_arquivo_selecionado = f"{curso_selecionado}_juncao.json"
         caminho_arquivo = os.path.join(pasta_juncao, nome_arquivo_selecionado)
-        with open(caminho_arquivo, "w") as f:
+        with open(caminho_arquivo, "w", encoding='utf-8') as f:
             dados = st.session_state['conflitos'].values()
             json.dump(list(dados), f, ensure_ascii=False, indent=4)
 
@@ -854,7 +854,7 @@ def app():
                 
                 # Carregar os conflitos existentes para o curso se o arquivo já existir
                 if os.path.exists(caminho_arquivo):
-                    with open(caminho_arquivo, "r") as f:
+                    with open(caminho_arquivo, "r", encoding='utf-8') as f:
                         conflitos_existentes = json.load(f)
                 else:
                     conflitos_existentes = {}
@@ -874,7 +874,7 @@ def app():
                     conflitos_existentes.append(conflito_data)
                     st.write(conflito_data)
                     # Salvar o arquivo atualizado de conflitos para o curso
-                    with open(caminho_arquivo, "w") as f:
+                    with open(caminho_arquivo, "w", encoding='utf-8') as f:
                         json.dump(conflitos_existentes, f, ensure_ascii=False, indent=4)
 
     def carregar_conflitos(curso_selecionado):
@@ -885,7 +885,7 @@ def app():
         caminho_arquivo = os.path.join(pasta_juncao, f"{curso_selecionado}_juncao.json")
         
         if os.path.exists(caminho_arquivo):
-            with open(caminho_arquivo, "r") as f:
+            with open(caminho_arquivo, "r", encoding='utf-8') as f:
                 conflitos = json.load(f)
                 # Verificar se o conteúdo é um dicionário no formato esperado
                 if isinstance(conflitos, dict) and all(isinstance(value, dict) for value in conflitos.values()):
@@ -1001,7 +1001,7 @@ def app():
             limpar_horario()
             st.success("Horário e arquivo de alocação excluídos com sucesso.")
             st.session_state['reset_confirmacao_exclusao'] = True 
-            st.experimental_rerun()
+            st.rerun()
     else:
         st.warning("Por favor, marque a confirmação para visualizar o botão de exclusão.")
 
