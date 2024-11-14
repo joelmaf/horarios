@@ -1,0 +1,14 @@
+{
+  "periodos": [
+    {"id_periodo": 1, "nome_periodo": "1º Período"},
+    {"id_periodo": 2, "nome_periodo": "2º Período"},
+    {"id_periodo": 3, "nome_periodo": "3º Período"},
+    {"id_periodo": 4, "nome_periodo": "4º Período"},
+    {"id_periodo": 5, "nome_periodo": "5º Período"},
+    {"id_periodo": 6, "nome_periodo": "6º Período"},
+    {"id_periodo": 7, "nome_periodo": "7º Período"},
+    {"id_periodo": 8, "nome_periodo": "8º Período"},
+    {"id_periodo": 9, "nome_periodo": "9º Período"},
+    {"id_periodo": 10, "nome_periodo": "10º Período"}
+  ]
+}

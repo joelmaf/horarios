@@ -1,0 +1,236 @@
+{
+    "disciplinas": [
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética",
+            "id_disciplina": 128,
+            "nome_disciplina": "Introdução ao EaD",
+            "periodo": "1º Período",
+            "carga_horaria": 10
+        },
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética",
+            "id_disciplina": 129,
+            "nome_disciplina": "Organização e Arquitetura de Computadores",
+            "periodo": "1º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética",
+            "id_disciplina": 130,
+            "nome_disciplina": "Lógica de Programação",
+            "periodo": "1º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética",
+            "id_disciplina": 131,
+            "nome_disciplina": "Banco de Dados 1",
+            "periodo": "1º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética",
+            "id_disciplina": 132,
+            "nome_disciplina": "Sistema Operacionais",
+            "periodo": "1º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética",
+            "id_disciplina": 133,
+            "nome_disciplina": "Princípios de Segurança da Informação",
+            "periodo": "1º Período",
+            "carga_horaria": 70
+        },
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética",
+            "id_disciplina": 134,
+            "nome_disciplina": "Redes de Comnputadores",
+            "periodo": "2º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética",
+            "id_disciplina": 135,
+            "nome_disciplina": "Administração Linux",
+            "periodo": "2º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética",
+            "id_disciplina": 136,
+            "nome_disciplina": "Cloud Computing",
+            "periodo": "2º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética",
+            "id_disciplina": 137,
+            "nome_disciplina": "Políticas de Segurança",
+            "periodo": "2º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética",
+            "id_disciplina": 138,
+            "nome_disciplina": "Direito Digital",
+            "periodo": "2º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética",
+            "id_disciplina": 139,
+            "nome_disciplina": "Ambiente de Desenvolvimento e Operação - DevSecOps",
+            "periodo": "3º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética",
+            "id_disciplina": 140,
+            "nome_disciplina": "Observabilidade e Monitoramento",
+            "periodo": "3º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética",
+            "id_disciplina": 141,
+            "nome_disciplina": "Segurança de Dados",
+            "periodo": "3º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética",
+            "id_disciplina": 142,
+            "nome_disciplina": "Ethical Hacking",
+            "periodo": "3º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética",
+            "id_disciplina": 143,
+            "nome_disciplina": "Empreendedorismo em Tecnologia da Informação",
+            "periodo": "3º Período",
+            "carga_horaria": 40
+        },
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética",
+            "id_disciplina": 144,
+            "nome_disciplina": "Optativa 1",
+            "periodo": "3º Período",
+            "carga_horaria": 40
+        },
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética",
+            "id_disciplina": 145,
+            "nome_disciplina": "Técnicas de Ataque e Defesa Cibernética",
+            "periodo": "4º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética",
+            "id_disciplina": 146,
+            "nome_disciplina": "Gestão de Riscos e Vulnerabilidades",
+            "periodo": "4º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética",
+            "id_disciplina": 147,
+            "nome_disciplina": "Projeto Integrador: Análise e Mitigação de Vulnerabilidades e Ameaças",
+            "periodo": "4º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética",
+            "id_disciplina": 148,
+            "nome_disciplina": "Mineração de Dados",
+            "periodo": "4º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética",
+            "id_disciplina": 149,
+            "nome_disciplina": "Gerência em Projetos de TI",
+            "periodo": "4º Período",
+            "carga_horaria": 40
+        },
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética",
+            "id_disciplina": 156,
+            "nome_disciplina": "Atividades Extensionistas",
+            "periodo": "4º Período",
+            "carga_horaria": 204
+        },
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética",
+            "id_disciplina": 150,
+            "nome_disciplina": "Optativa 2",
+            "periodo": "4º Período",
+            "carga_horaria": 40
+        },
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética",
+            "id_disciplina": 151,
+            "nome_disciplina": "Teste de Vulnerabilidades em Aplicações Web",
+            "periodo": "5º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética",
+            "id_disciplina": 152,
+            "nome_disciplina": "Segurança em Cloud",
+            "periodo": "5º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética",
+            "id_disciplina": 153,
+            "nome_disciplina": "Introdução à Arquiteturas Seguras",
+            "periodo": "5º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética",
+            "id_disciplina": 154,
+            "nome_disciplina": "Harderning de Soluções",
+            "periodo": "5º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética",
+            "id_disciplina": 155,
+            "nome_disciplina": "Análise e Perícia Forense Computacional",
+            "periodo": "5º Período",
+            "carga_horaria": 80
+        }
+    ]
+}

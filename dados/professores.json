@@ -1,0 +1,69 @@
+{
+    "professores": [
+        {
+            "id_professor": 1,
+            "nome_professor": "Joelma Ferreira",
+            "matricula": 101
+        },
+        {
+            "id_professor": 2,
+            "nome_professor": "Ricardo Kratz",
+            "matricula": 102
+        },
+        {
+            "id_professor": 3,
+            "nome_professor": "Rodolpho Stach",
+            "matricula": 103
+        },
+        {
+            "id_professor": 4,
+            "nome_professor": "Vitor Barbosa",
+            "matricula": 104
+        },
+        {
+            "id_professor": 5,
+            "nome_professor": "Leandro Oliveira",
+            "matricula": 105
+        },
+        {
+            "id_professor": 6,
+            "nome_professor": "Thiago Lemes",
+            "matricula": 106
+        },
+        {
+            "id_professor": 7,
+            "nome_professor": "Murilo Pacheco",
+            "matricula": 107
+        },
+        {
+            "id_professor": 8,
+            "nome_professor": "Fabiana Chagas",
+            "matricula": 108
+        },
+        {
+            "id_professor": 9,
+            "nome_professor": "Heuber Lima",
+            "matricula": 109
+        },
+        {
+            "id_professor": 10,
+            "nome_professor": "Bruno Urbano",
+            "matricula": 110
+        },
+        {
+            "id_professor": 11,
+            "nome_professor": "Rodrigo Muniz",
+            "matricula": 111
+        },
+        {
+            "id_professor": 12,
+            "nome_professor": "Ariana Ramos",
+            "matricula": 112
+        },
+        {
+            "id_professor": 13,
+            "nome_professor": "Caroline Santos",
+            "matricula": 113
+        }
+    ]
+}

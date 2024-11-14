@@ -1,0 +1,530 @@
+Você é um coordenador de curso responsável por elaborar o cronograma de disciplinas para cursos distintos, são eles Banco de Dados, Segurança Cibernética, Análise e Desenvolvimento de Sistemas, alocando professores de acordo com suas disponibilidades e prevenindo conflitos de horário. O principal objetivo é evitar choques de horários. 
+
+
+Instruções:
+
+1. Regras de Horários:
+Dias disponíveis: Segunda, Terça, Quarta, Quinta, Sexta, com horários específicos: "18:45 - 19:30", "19:30 - 20:15", "20:30 - 21:15", "21:15 - 22:00", "22:00 - 22:45". Cada intervalo representa um tempo de aula.
+Algumas disciplinas ocupam dois tempos e devem ser SEMPRE alocadas em horários consecutivos do mesmo dia.
+
+Por exemplo, "18:45 - 19:30" equivale um tempo, se a disciplina "Lógica de Programação" tem carga horária de 2 tempos e o melhor dia para alocação é na sexta, ela poderia ser alocada nos horários "18:45 - 19:30" e "19:30 - 20:15", que são consecutivos, mas não poderia ser alocada, por exemplo, em "18:45 - 19:30" e "20:30 - 21:15", que não são consecutivos. Uma disciplina de 1 tempo, por exemplo Banco de Dados 1, seria alocada somente em 1 horário.
+
+2. Regras de Disponibilidade:
+Cada professor possui horários e dias específicos de disponibilidade que devem ser obedecidos. 
+
+3. Regras de Preferẽncia
+Algumas disciplinas só podem ser ministradas em dias específicos: Quarta, Quinta ou ambos, conforme detalhado a seguir.
+
+Algumas disciplinas só podem acontecer em determinado.
+
+4. Regras de Agrupamento de Turmas:
+
+Certas disciplinas são comuns entre cursos e/ou períodos distintos. Nesses casos, considere uma junção (e indique no horário), onde o professor leciona uma única vez no horário alocado para todos os períodos/cursos em comum. Identifique isso pelo nome das disciplinas.
+
+
+5. Regras de Exigência de Alocação por Curso e Período:
+Exiba o horário detalhado para cada curso e período específico. Para disciplinas de dois tempos, repita o nome da disciplina e o professor nos dois tempos alocados.
+
+Contexto:
+
+A) Informações sobre as disciplinas de cada curso: 
+
+1. Lista de Disciplinas do Curso de Banco de Dados
+{
+    "disciplinas": [
+        {
+            "id_curso": 103,
+            "nome_curso": "Banco de Dados",
+            "id_disciplina": 159,
+            "nome_disciplina": "Organização e Arquitetura de Computadores",
+            "periodo": "1º Período",
+            "carga_horaria": 2 tempos
+        },
+        {
+            "id_curso": 103,
+            "nome_curso": "Banco de Dados",
+            "id_disciplina": 160,
+            "nome_disciplina": "Lógica de Programação",
+            "periodo": "1º Período",
+            "carga_horaria": 2 tempos
+        },
+        {
+            "id_curso": 103,
+            "nome_curso": "Banco de Dados",
+            "id_disciplina": 161,
+            "nome_disciplina": "Banco de Dados 1",
+            "periodo": "1º Período",
+            "carga_horaria": 1 tempo
+        },
+        {
+            "id_curso": 103,
+            "nome_curso": "Banco de Dados",
+            "id_disciplina": 162,
+            "nome_disciplina": "Estatística 1",
+            "periodo": "2º Período",
+            "carga_horaria": 2 tempos
+        },
+        {
+            "id_curso": 103,
+            "nome_curso": "Banco de Dados",
+            "id_disciplina": 163,
+            "nome_disciplina": "Machine Learning",
+            "periodo": "2º Período",
+            "carga_horaria": 2 tempos
+        },
+        {
+            "id_curso": 103,
+            "nome_curso": "Banco de Dados",
+            "id_disciplina": 164,
+            "nome_disciplina": "Business Inteligence",
+            "periodo": "2º Período",
+            "carga_horaria": 1 tempo
+        },
+        {
+            "id_curso": 103,
+            "nome_curso": "Banco de Dados",
+            "id_disciplina": 167,
+            "nome_disciplina": "Estatística 2",
+            "periodo": "3º Período",
+            "carga_horaria": 2 tempos
+        },
+        {
+            "id_curso": 103,
+            "nome_curso": "Banco de Dados",
+            "id_disciplina": 169,
+            "nome_disciplina": "Análise Exploratória de Dados e Visualização",
+            "periodo": "3º Período",
+            "carga_horaria": 2 tempos
+        },
+        {
+            "id_curso": 103,
+            "nome_curso": "Banco de Dados",
+            "id_disciplina": 171,
+            "nome_disciplina": "Empreendedorismo em Tecnologia da Informação",
+            "periodo": "3º Período",
+            "carga_horaria": 1 tempo
+        },
+        {
+            "id_curso": 103,
+            "nome_curso": "Banco de Dados",
+            "id_disciplina": 174,
+            "nome_disciplina": "Análise de Séries Temporais ",
+            "periodo": "4º Período",
+            "carga_horaria": 2 tempos
+        },
+        {
+            "id_curso": 103,
+            "nome_curso": "Banco de Dados",
+            "id_disciplina": 175,
+            "nome_disciplina": "Banco de Dados não Relacional (noSQL)",
+            "periodo": "4º Período",
+            "carga_horaria": 2 tempos
+        },
+        {
+            "id_curso": 103,
+            "nome_curso": "Banco de Dados",
+            "id_disciplina": 176,
+            "nome_disciplina": "Cloud Computing e Segurança de Aplicação de IA",
+            "periodo": "4º Período",
+            "carga_horaria": 1 tempo
+        },
+        {
+            "id_curso": 103,
+            "nome_curso": "Banco de Dados",
+            "id_disciplina": 184,
+            "nome_disciplina": "Atividades Extensionistas",
+            "periodo": "4º Período",
+            "carga_horaria": 2 tempos
+        }
+
+    ]
+}
+
+
+2. Lista de Disciplinas do Curso de Segurança cibernética
+
+{
+    "disciplinas": [
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética",
+            "id_disciplina": 129,
+            "nome_disciplina": "Organização e Arquitetura de Computadores",
+            "periodo": "1º Período",
+            "carga_horaria": 2 tempos
+        },
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética",
+            "id_disciplina": 130,
+            "nome_disciplina": "Lógica de Programação",
+            "periodo": "1º Período",
+            "carga_horaria": 2 tempos
+        },
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética",
+            "id_disciplina": 131,
+            "nome_disciplina": "Banco de Dados 1",
+            "periodo": "1º Período",
+            "carga_horaria": 1 tempo
+        },
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética",
+            "id_disciplina": 134,
+            "nome_disciplina": "Redes de Comnputadores",
+            "periodo": "2º Período",
+            "carga_horaria": 2 tempos
+        },
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética",
+            "id_disciplina": 137,
+            "nome_disciplina": "Políticas de Segurança",
+            "periodo": "2º Período",
+            "carga_horaria": 2 tempos
+        },
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética",
+            "id_disciplina": 140,
+            "nome_disciplina": "Observabilidade e Monitoramento",
+            "periodo": "3º Período",
+            "carga_horaria": 2 tempos
+        },
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética",
+            "id_disciplina": 142,
+            "nome_disciplina": "Ethical Hacking",
+            "periodo": "3º Período",
+            "carga_horaria": 2 tempos
+        },
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética",
+            "id_disciplina": 143,
+            "nome_disciplina": "Empreendedorismo em Tecnologia da Informação",
+            "periodo": "3º Período",
+            "carga_horaria": 1 tempo
+        },
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética",
+            "id_disciplina": 156,
+            "nome_disciplina": "Atividades Extensionistas",
+            "periodo": "3º Período",
+            "carga_horaria": 2 tempos
+        },
+
+    ]
+}
+
+
+3. Lista de Disciplinas do Curso de Análise e Desenvolvimento de Sistemas
+
+{
+    "disciplinas": [
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas",
+            "id_disciplina": 103,
+            "nome_disciplina": "Banco de Dados 1",
+            "periodo": "1º Período",
+            "carga_horaria": 1 tempo
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas",
+            "id_disciplina": 104,
+            "nome_disciplina": "Organização e Arquitetura de Computadores",
+            "periodo": "1º Período",
+            "carga_horaria": 2 tempos
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas",
+            "id_disciplina": 105,
+            "nome_disciplina": "Lógica de Programação",
+            "periodo": "1º Período",
+            "carga_horaria": 2 tempos
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas",
+            "id_disciplina": 107,
+            "nome_disciplina": "Desenvolvimento Front-End 2",
+            "periodo": "2º Período",
+            "carga_horaria": 2 tempos
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas",
+            "id_disciplina": 109,
+            "nome_disciplina": "Análise e Projeto de Sistemas",
+            "periodo": "2º Período",
+            "carga_horaria": 2 tempos
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas",
+            "id_disciplina": 112,
+            "nome_disciplina": "Testes de Sistemas",
+            "periodo": "3º Período",
+            "carga_horaria": 2 tempos
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas",
+            "id_disciplina": 113,
+            "nome_disciplina": "Desenvolvimento Back-End 2",
+            "periodo": "3º Período",
+            "carga_horaria": 2 tempos
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas",
+            "id_disciplina": 116,
+            "nome_disciplina": "Empreendedorismo em Tecnologia da Informação",
+            "periodo": "3º Período",
+            "carga_horaria": 1 tempo
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas",
+            "id_disciplina": 118,
+            "nome_disciplina": "Padrões de Projetos",
+            "periodo": "4º Período",
+            "carga_horaria": 2 tempos
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas",
+            "id_disciplina": 120,
+            "nome_disciplina": "Desenvolvimento Mobile 2",
+            "periodo": "4º Período",
+            "carga_horaria": 2 tempos
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas",
+            "id_disciplina": 129,
+            "nome_disciplina": "Atividades Extensionistas",
+            "periodo": "4º Período",
+            "carga_horaria": 2 tempos
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas",
+            "id_disciplina": 123,
+            "nome_disciplina": "Teste de Vulnerabilidades em Aplicações Web",
+            "periodo": "5º Período",
+            "carga_horaria": 2 tempos
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas",
+            "id_disciplina": 125,
+            "nome_disciplina": "Políticas de Segurança",
+            "periodo": "5º Período",
+            "carga_horaria": 2 tempos
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas",
+            "id_disciplina": 124,
+            "nome_disciplina": "Segurança em Cloud e Ambientes Web",
+            "periodo": "5º Período",
+            "carga_horaria": 4 tempos
+        }
+    ]
+}
+
+B) Dias que cada disciplinas DEVE ser alocada, não podem ser alocadas em outros dia
+
+{
+    "dias_alocação": 
+        {
+			"quarta": ["Desenvolvimento Front-End 2","Análise e Projeto de Sistemas","Padrões de Projetos", "Desenvolvimento Mobile 2","Estatística 1","Machine Learning","Business Inteligence","Análise de Séries Temporais ","Banco de Dados não Relacional (noSQL)","Cloud Computing e Segurança de Aplicação de IA","Redes de Comnputadores","Políticas de Segurança"],
+
+			"quinta": ["Banco de Dados 1","Organização e Arquitetura de Computadores", "Lógica de Programação","Testes de Sistemas", "Desenvolvimento Back-End 2","Empreendedorismo em Tecnologia da Informação", "Banco de Dados 1","Organização e Arquitetura de Computadores","Lógica de Programação","Estatística 2","Análise Exploratória de Dados e Visualização","Empreendedorismo em Tecnologia da Informação", "Observabilidade e Monitoramento", "Ethical Hacking"]
+		},
+
+}
+
+As disciplinas "Teste de Vulnerabilidades em "Atividades Extensionistas", Aplicações Web","Segurança em Cloud e Ambientes Web","Políticas de Segurança" são mais flexíveis e podem ser alocadas quarta ou quinta.
+
+
+C) Lista completa de professores e suas disponibilidades: 
+
+{
+    "disponibilidades": [
+        {
+            "nome_professor": "Joelma Ferreira",
+			"disponibilidade": {
+						"quarta":["18:45 - 19:30","19:30 - 20:15","20:30 - 21:15","21:15 - 22:00", "22:00 - 22:45"],
+						"quinta":["18:45 - 19:30","19:30 - 20:15","20:30 - 21:15","21:15 - 22:00", "22:00 - 22:45"],
+			}
+		},
+		{
+            "nome_professor": "Ricardo Kratz",
+			"disponibilidade": {
+						"terça":["18:45 - 19:30","19:30 - 20:15","20:30 - 21:15","21:15 - 22:00", "22:00 - 22:45"],
+						"quarta":["18:45 - 19:30","19:30 - 20:15","20:30 - 21:15","21:15 - 22:00", "22:00 - 22:45"],
+						"quinta":["18:45 - 19:30","19:30 - 20:15","20:30 - 21:15","21:15 - 22:00", "22:00 - 22:45"],
+			}
+		},
+		{
+            "nome_professor": "Rodolpho Stach",
+			"disponibilidade": {
+						"quarta":["18:45 - 19:30","19:30 - 20:15","20:30 - 21:15","21:15 - 22:00", "22:00 - 22:45"],
+						"quinta":["18:45 - 19:30","19:30 - 20:15","20:30 - 21:15","21:15 - 22:00", "22:00 - 22:45"],
+			}
+		},
+		{
+            "nome_professor": "Vitor Barbosa",
+			"disponibilidade": {
+						"quarta":["18:45 - 19:30","19:30 - 20:15","20:30 - 21:15","21:15 - 22:00", "22:00 - 22:45"],
+						"quinta":["18:45 - 19:30","19:30 - 20:15","20:30 - 21:15","21:15 - 22:00", "22:00 - 22:45"],
+			}
+		},
+		{
+            "nome_professor": "Leandro Oliveira",
+			"disponibilidade": {
+						"quarta":["18:45 - 19:30","19:30 - 20:15","20:30 - 21:15","21:15 - 22:00", "22:00 - 22:45"],
+						"quinta":["18:45 - 19:30","19:30 - 20:15","20:30 - 21:15","21:15 - 22:00", "22:00 - 22:45"],
+			}
+		},
+		{
+            "nome_professor": "Thiago Lemes",
+			"disponibilidade": {
+						"terça":["18:45 - 19:30","19:30 - 20:15","20:30 - 21:15","21:15 - 22:00", "22:00 - 22:45"],
+						"quarta":["18:45 - 19:30","19:30 - 20:15","20:30 - 21:15","21:15 - 22:00", "22:00 - 22:45"],
+						"quinta":["18:45 - 19:30","19:30 - 20:15","20:30 - 21:15","21:15 - 22:00", "22:00 - 22:45"],
+			}
+		},
+		{
+            "nome_professor": "Murilo Pacheco",
+			"disponibilidade": {
+						"terça":["18:45 - 19:30","19:30 - 20:15","20:30 - 21:15","21:15 - 22:00", "22:00 - 22:45"],
+						"quarta":["18:45 - 19:30","19:30 - 20:15","20:30 - 21:15","21:15 - 22:00", "22:00 - 22:45"],
+						"quinta":["18:45 - 19:30","19:30 - 20:15","20:30 - 21:15","21:15 - 22:00", "22:00 - 22:45"],
+			}
+		},
+		{
+            "nome_professor": "Fabiana Chagas",
+			"disponibilidade": {
+						"quarta":["18:45 - 19:30","19:30 - 20:15","20:30 - 21:15","21:15 - 22:00", "22:00 - 22:45"],
+			}
+		},
+		{
+            "nome_professor": "Heuber Lima",
+			"disponibilidade": {
+						"quarta":["18:45 - 19:30","19:30 - 20:15","20:30 - 21:15","21:15 - 22:00", "22:00 - 22:45"],
+						"quinta":["18:45 - 19:30","19:30 - 20:15","20:30 - 21:15","21:15 - 22:00", "22:00 - 22:45"],
+			}
+		},
+		{
+            "nome_professor": "Bruno Urbano",
+			"disponibilidade": {
+						"terça":["18:45 - 19:30","19:30 - 20:15","20:30 - 21:15","21:15 - 22:00", "22:00 - 22:45"],
+						"quarta":["18:45 - 19:30","19:30 - 20:15","20:30 - 21:15","21:15 - 22:00", "22:00 - 22:45"],
+						"quinta":["18:45 - 19:30","19:30 - 20:15","20:30 - 21:15","21:15 - 22:00", "22:00 - 22:45"],
+			}
+		},
+		{
+            "nome_professor": "Rodrigo Muniz",
+			"disponibilidade": {
+						"quarta":["18:45 - 19:30","19:30 - 20:15","20:30 - 21:15","21:15 - 22:00", "22:00 - 22:45"],
+						"quinta":["18:45 - 19:30","19:30 - 20:15","20:30 - 21:15","21:15 - 22:00", "22:00 - 22:45"],
+			}
+		},
+	]
+}
+
+D) Lista de disciplinas que cada professor pode lecionar
+
+{
+    "disciplinas_professor": [
+        {
+            "nome_professor": "Joelma Ferreira",
+			"disciplinas": ["Banco de Dados 1"]
+		},
+		{
+            "nome_professor": "Ricardo Kratz",
+			"disciplinas": [ "Organização e Arquitetura de Computadores","Testes de Sistemas","Empreendedorismo em Tecnologia da Informação"]
+		},
+		{
+            "nome_professor": "Rodolpho Stach",
+			"disciplinas": [ "Redes de Comnputadores","Observabilidade e Monitoramento"]
+		},
+		{
+            "nome_professor": "Leandro Oliveira",
+			"disciplinas": [ "Segurança em Cloud e Ambientes Web", "Cloud Computing e Segurança de Aplicação de IA"]
+		},
+		{
+            "nome_professor": "Bruno Urbano",
+			"disciplinas": [ "Desenvolvimento Back-End 2", "Teste de Vulnerabilidades em Aplicações Web"]
+		},
+		{
+            "nome_professor": "Thiago Lemes",
+			"disciplinas": [ "Lógica de Programação","Machine Learning","Análise de Séries Temporais", "Estatística 2"]
+		},
+		{
+            "nome_professor": "Murilo Pacheco",
+			"disciplinas": [ "Desenvolvimento Front-End 2","Banco de Dados não Relacional (noSQL)","Desenvolvimento Mobile 2"]
+		},
+		{
+            "nome_professor": "Fabiana Chagas",
+			"disciplinas": [ "Estatística 1"]
+		},
+		{
+            "nome_professor": "Heuber Lima",
+			"disciplinas": [ "Análise e Projeto de Sistemas","Business Inteligence","Análise Exploratória de Dados e Visualização", "Padrões de Projetos", "Atividades Extensionistas"]
+		},
+		{
+            "nome_professor": "Rodrigo Muniz",
+			"disciplinas": [ "Políticas de Segurança","Ethical Hacking"]
+		},
+	]
+}
+
+
+Estrutura de Resposta Esperada:
+
+- Para cada curso (Banco de Dados, Segurança Cibernética, Análise e Desenvolvimento de Sistemas), mostre APENAS o horário por período (1º Período, 2º Período, etc.).
+- Organize os horários em uma tabela com dias como colunas e horários como linhas.
+- Indique, quando aplicável, a junção de disciplinas comuns para períodos ou cursos distintos.
+
+Não quero uma indicação do que fazer, nenhum texto explicativo e/ou sugestivo, mas as tabelas do horário pronto.
+
+Exemplo de Formatação das Tabelas de Resposta:
+
+Curso: Banco de Dados
+
+1º Período:
+| Horário            | Segunda | Terça   | Quarta                             | Quinta                                  | Sexta |
+|--------------------|---------|---------|------------------------------------|-----------------------------------------|-------|
+| 18:45 - 19:30      |         |         | Redes Neurais Joelma Ferreira      | Organização e Arquitetura Ricardo Kratz |       |
+| 19:30 - 20:15      |         |         | Redes Neurais Joelma Ferreira      | Organização e Arquitetura Ricardo Kratz |       |
+| 20:30 - 21:15      |         |         | Estatística 1  Joelma Ferreira     | Lógica de Programação Thiano Santana    |       |
+| 21:15 - 22:00      |         |         | Estatística 1  Joelma Ferreira     | Lógica de Programação Thiano Santana    |       |
+| 22:00 - 22:45      |         |         |                                    | Banco de Dados 1 Joelma Ferreira        |       |
+
+2º Período:
+- E assim por diante para os demais períodos e cursos.
+
+
+Todos os dados foram fornecidos no contexto e regras: as informações sobre os professores, suas disponibilidades, e as disciplinas dos cursos (Banco de Dados, Segurança Cibernética e Análise e Desenvolvimento de Sistemas).
+
+NAO INVENTE NADA, considere APENAS as instruções e os DADOS presentes no contexto para criar um cronograma completo, garantindo:
+
+As preferências de alocação.
+Previnindo que NÃO HAJA choques de horário para os professores: Cada professor terá um horário específico para cada disciplina que leciona e não haverá sobreposição, dados aula em mais de uma disciplina no mesmo horário.
+As regras de disponibilidade dos professores sejam respeitadas: Cada professor só lecionará nas horas e dias em que está disponível.
+As regras de preferência de dias para as disciplinas sejam cumpridas: Disciplinas que só podem ser ministradas em dias específicos serão alocadas de acordo.
+As junções de turmas sejam realizadas corretamente: Disciplinas comuns (mesmo nome) serão agrupadas em um único horário.
+O cronograma seja exibido de forma detalhada para cada curso e período: Incluindo o nome da disciplina, o professor e o horário específico.
+
+GERAR COMO RESPOSTA AS TABELAS DOS HORÁRIOS DE TODOS OS TRÊS CURSOS E TODOS OS PERÍODOS

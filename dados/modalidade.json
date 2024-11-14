@@ -1,0 +1,11 @@
+{
+  "modalidade": [
+    {"id_modalidade": 1, "nome_modalidade": "Remoto"},
+    {"id_modalidade": 2, "nome_modalidade": "Presencial"},
+    {"id_modalidade": 3, "nome_modalidade": "EAD"},
+    {"id_modalidade": 4, "nome_modalidade": "Síncrono"},
+    {"id_modalidade": 5, "nome_modalidade": "Assíncrono"},
+    {"id_modalidade": 6, "nome_modalidade": "Assíncrono EAD"},
+    {"id_modalidade": 7, "nome_modalidade": "Síncrono EAD"}
+  ]
+}

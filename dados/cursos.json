@@ -1,0 +1,20 @@
+{
+    "cursos": [
+        {
+            "id_curso": 101,
+            "nome_curso": "Segurança Cibernética"
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas"
+        },
+        {
+            "id_curso": 103,
+            "nome_curso": "Banco de Dados"
+        },
+        {
+            "id_curso": 104,
+            "nome_curso": "Administração"
+        }
+    ]
+}

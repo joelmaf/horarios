@@ -1,0 +1,20 @@
+[
+    {
+        "Tipo": "Conflito",
+        "Curso": "Segurança Cibernética",
+        "Período": "1º Período",
+        "Dia": "Segunda",
+        "Horário": "18:45 - 19:30",
+        "Matrícula": "101",
+        "Professor": "Joelma Ferreira"
+    },
+    {
+        "Tipo": "Conflito",
+        "Curso": "Análise e Desenvolvimento de Sistemas",
+        "Período": "1º Período",
+        "Dia": "Segunda",
+        "Horário": "18:45 - 19:30",
+        "Matrícula": "101",
+        "Professor": "Joelma Ferreira"
+    }
+]

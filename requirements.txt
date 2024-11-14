@@ -1,0 +1,10 @@
+pdfkit
+openpyxl
+tiktoken
+openai
+langchain-community
+langchain_text_splitters
+langchain_huggingface
+langchain_qdrant
+qdrant-client
+python-dotenv
