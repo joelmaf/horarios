@@ -12,10 +12,6 @@ from pymongo.server_api import ServerApi
 def app():     
 
 
-    path_to_wkhtmltopdf = '/bin'  
-    config = pdfkit.configuration(wkhtmltopdf=path_to_wkhtmltopdf)
-
-
     # Função para carregar arquivos JSON
     def carregar_json(arquivo):
         if os.path.exists(arquivo):
@@ -638,3 +634,5 @@ def app():
     escolhe_exclusao()
     escolher_gerar_excel()
     
+    if st.button("pdfkit"):
+        pdfkit.from_string('<h1>Hello World!</h1>', 'out.pdf')
