@@ -12,7 +12,7 @@ from pymongo.server_api import ServerApi
 def app():     
 
 
-    path_to_wkhtmltopdf = '/bin/wkhtmltopdf'  
+    path_to_wkhtmltopdf = '/bin'  
     config = pdfkit.configuration(wkhtmltopdf=path_to_wkhtmltopdf)
 
 
