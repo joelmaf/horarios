@@ -10,6 +10,12 @@ from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 
 def app():     
+
+
+    path_to_wkhtmltopdf = '/bin/wkhtmltopdf'  
+    config = pdfkit.configuration(wkhtmltopdf=path_to_wkhtmltopdf)
+
+
     # Função para carregar arquivos JSON
     def carregar_json(arquivo):
         if os.path.exists(arquivo):
@@ -557,7 +563,7 @@ def app():
     def escolhe_registrar_horario(id_curso_selecionado, periodo_selecionado):
         col_button, _ = st.columns([1, 2])  
         with col_button:
-            registrar_button = st.button("Registrar Horário", key="registrar", use_container_width=True)         
+            registrar_button = st.button("Salvar Período no Horário", key="registrar", use_container_width=True)         
         return registrar_button
 
     def escolhe_exclusao():
@@ -632,4 +638,3 @@ def app():
     escolhe_exclusao()
     escolher_gerar_excel()
     
-   
