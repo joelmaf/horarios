@@ -8,9 +8,18 @@ from openpyxl import Workbook
 import tempfile
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
+from xhtml2pdf import pisa
+from fpdf import FPDF
 
 def app():     
 
+    def create_pdf():
+        pdf = FPDF()
+        pdf.add_page()
+        pdf.set_font("Arial", size=12)
+        pdf.cell(200, 10, txt="PDF Gerado no Streamlit Cloud", ln=True, align='C')
+        pdf.cell(200, 10, txt="Este é um exemplo de conteúdo!", ln=True, align='L')
+        return pdf.output(dest='S').encode('latin1')  # Retorna o PDF como bytes
 
     # Função para carregar arquivos JSON
     def carregar_json(arquivo):
@@ -635,4 +644,10 @@ def app():
     escolher_gerar_excel()
     
     if st.button("pdfkit"):
-        pdfkit.from_string('<h1>Hello World!</h1>', 'out.pdf')
+        pdf_bytes = create_pdf()
+        st.download_button(
+            label="Baixar PDF",
+            data=pdf_bytes,
+            file_name="exemplo.pdf",
+            mime="application/pdf"
+        )
