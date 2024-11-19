@@ -8,7 +8,6 @@ from openpyxl import Workbook
 import tempfile
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
-from xhtml2pdf import pisa
 from fpdf import FPDF
 
 def app():     
