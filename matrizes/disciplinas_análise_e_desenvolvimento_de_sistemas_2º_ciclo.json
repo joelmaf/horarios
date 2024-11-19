@@ -1,0 +1,236 @@
+{
+    "disciplinas": [
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas 2 Ciclo",
+            "id_disciplina": 101,
+            "nome_disciplina": "Introdução ao EaD",
+            "periodo": "1º Período",
+            "carga_horaria": 10
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas 2 Ciclo",
+            "id_disciplina": 102,
+            "nome_disciplina": "Servidores Web",
+            "periodo": "1º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas 2 Ciclo",
+            "id_disciplina": 103,
+            "nome_disciplina": "Banco de Dados 1",
+            "periodo": "1º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas 2 Ciclo",
+            "id_disciplina": 104,
+            "nome_disciplina": "Organização e Arquitetura de Computadores",
+            "periodo": "1º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas 2 Ciclo",
+            "id_disciplina": 105,
+            "nome_disciplina": "Lógica de Programação",
+            "periodo": "1º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas 2 Ciclo",
+            "id_disciplina": 106,
+            "nome_disciplina": "Desenvolvimento Front-End 1",
+            "periodo": "1º Período",
+            "carga_horaria": 70
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas 2 Ciclo",
+            "id_disciplina": 107,
+            "nome_disciplina": "Desenvolvimento Front-End 2",
+            "periodo": "2º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas 2 Ciclo",
+            "id_disciplina": 108,
+            "nome_disciplina": "Desenvolvimento Back-End 1",
+            "periodo": "2º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas 2 Ciclo",
+            "id_disciplina": 109,
+            "nome_disciplina": "Análise e Projeto de Sistemas",
+            "periodo": "2º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas 2 Ciclo",
+            "id_disciplina": 110,
+            "nome_disciplina": "Estruturas de Dados",
+            "periodo": "2º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas 2 Ciclo",
+            "id_disciplina": 111,
+            "nome_disciplina": "Banco de Dados 2",
+            "periodo": "2º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas 2 Ciclo",
+            "id_disciplina": 112,
+            "nome_disciplina": "Testes de Sistemas",
+            "periodo": "3º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas 2 Ciclo",
+            "id_disciplina": 113,
+            "nome_disciplina": "Desenvolvimento Back-End 2",
+            "periodo": "3º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas 2 Ciclo",
+            "id_disciplina": 114,
+            "nome_disciplina": "Desenvolvimento Mobile 1",
+            "periodo": "3º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas 2 Ciclo",
+            "id_disciplina": 115,
+            "nome_disciplina": "Serviços WEB e API Rest",
+            "periodo": "3º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas 2 Ciclo",
+            "id_disciplina": 116,
+            "nome_disciplina": "Empreendedorismo em Tecnologia da Informação",
+            "periodo": "3º Período",
+            "carga_horaria": 40
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas 2 Ciclo",
+            "id_disciplina": 117,
+            "nome_disciplina": "Optativa 1",
+            "periodo": "3º Período",
+            "carga_horaria": 40
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas 2 Ciclo",
+            "id_disciplina": 118,
+            "nome_disciplina": "Padrões de Projetos",
+            "periodo": "4º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas 2 Ciclo",
+            "id_disciplina": 119,
+            "nome_disciplina": "Desenvolvimento Back-End 3",
+            "periodo": "4º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas 2 Ciclo",
+            "id_disciplina": 120,
+            "nome_disciplina": "Desenvolvimento Mobile 2",
+            "periodo": "4º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas 2 Ciclo",
+            "id_disciplina": 121,
+            "nome_disciplina": "Mineração de Dados",
+            "periodo": "4º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas 2 Ciclo",
+            "id_disciplina": 122,
+            "nome_disciplina": "Gerência e Governança em Projetos de TI",
+            "periodo": "4º Período",
+            "carga_horaria": 40
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas 2 Ciclo",
+            "id_disciplina": 123,
+            "nome_disciplina": "Teste de Vulnerabilidades em Aplicações Web",
+            "periodo": "5º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas 2 Ciclo",
+            "id_disciplina": 124,
+            "nome_disciplina": "Segurança em Cloud e Ambientes Web",
+            "periodo": "5º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas 2 Ciclo",
+            "id_disciplina": 125,
+            "nome_disciplina": "Políticas de Segurança",
+            "periodo": "5º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas 2 Ciclo",
+            "id_disciplina": 126,
+            "nome_disciplina": "Direito Digital",
+            "periodo": "5º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas 2 Ciclo",
+            "id_disciplina": 127,
+            "nome_disciplina": "Análise e Perícia Forense Computacional",
+            "periodo": "5º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas 2 Ciclo",
+            "id_disciplina": 128,
+            "nome_disciplina": "Optativa 2",
+            "periodo": "4º Período",
+            "carga_horaria": 40
+        },
+        {
+            "id_curso": 102,
+            "nome_curso": "Análise e Desenvolvimento de Sistemas 2 Ciclo",
+            "id_disciplina": 129,
+            "nome_disciplina": "Atividades Extensionistas",
+            "periodo": "4º Período",
+            "carga_horaria": 204
+        }
+    ]
+}

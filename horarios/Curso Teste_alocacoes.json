@@ -1,0 +1,399 @@
+{
+    "curso": "Curso Teste",
+    "periodos": {
+        "1\u00ba Per\u00edodo": [
+            {
+                "horario": "18:45 \u2013 19:30",
+                "dia": "Sexta",
+                "disciplina": "Servidores Web",
+                "professor": "Heuber Lima",
+                "matricula_professor": 109,
+                "modalidade": "Ass\u00edncrono"
+            },
+            {
+                "horario": "19:30 \u2013 20:15",
+                "dia": "Sexta",
+                "disciplina": "Desenvolvimento Front-End 1",
+                "professor": "Ricardo Kratz",
+                "matricula_professor": 102,
+                "modalidade": "Ass\u00edncrono"
+            },
+            {
+                "horario": "20:30 \u2013 21:15",
+                "dia": "Quinta",
+                "disciplina": "Servidores Web",
+                "professor": "Heuber Lima",
+                "matricula_professor": 109,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "21:15 \u2013 22:00",
+                "dia": "Quinta",
+                "disciplina": "Servidores Web",
+                "professor": "Heuber Lima",
+                "matricula_professor": 109,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "22:00 \u2013 22:45",
+                "dia": "Quinta",
+                "disciplina": "Desenvolvimento Front-End 1",
+                "professor": "Ricardo Kratz",
+                "matricula_professor": 102,
+                "modalidade": "S\u00edncrono"
+            }
+        ],
+        "2\u00ba Per\u00edodo": [
+            {
+                "horario": "18:45 \u2013 19:30",
+                "dia": "Quarta",
+                "disciplina": "Banco de Dados 2",
+                "professor": "Murilo Gomes",
+                "matricula_professor": 107,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "18:45 \u2013 19:30",
+                "dia": "Sexta",
+                "disciplina": "Banco de Dados 2",
+                "professor": "Murilo Gomes",
+                "matricula_professor": 107,
+                "modalidade": "Ass\u00edncrono"
+            },
+            {
+                "horario": "19:30 \u2013 20:15",
+                "dia": "Quarta",
+                "disciplina": "Banco de Dados 2",
+                "professor": "Murilo Gomes",
+                "matricula_professor": 107,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "19:30 \u2013 20:15",
+                "dia": "Sexta",
+                "disciplina": "Estruturas de Dados",
+                "professor": "Ricardo Kratz",
+                "matricula_professor": 102,
+                "modalidade": "Ass\u00edncrono"
+            },
+            {
+                "horario": "20:30 \u2013 21:15",
+                "dia": "Quarta",
+                "disciplina": "Estruturas de Dados",
+                "professor": "Ricardo Kratz",
+                "matricula_professor": 102,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "20:30 \u2013 21:15",
+                "dia": "Sexta",
+                "disciplina": "Desenvolvimento Back-End 1",
+                "professor": "Ricardo Kratz",
+                "matricula_professor": 102,
+                "modalidade": "Ass\u00edncrono"
+            },
+            {
+                "horario": "21:15 \u2013 22:00",
+                "dia": "Quarta",
+                "disciplina": "Desenvolvimento Back-End 1",
+                "professor": "Ricardo Kratz",
+                "matricula_professor": 102,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "22:00 \u2013 22:45",
+                "dia": "Quarta",
+                "disciplina": "Desenvolvimento Back-End 1",
+                "professor": "Ricardo Kratz",
+                "matricula_professor": 102,
+                "modalidade": "S\u00edncrono"
+            }
+        ],
+        "3\u00ba Per\u00edodo": [
+            {
+                "horario": "18:45 \u2013 19:30",
+                "dia": "Quarta",
+                "disciplina": "Servi\u00e7os WEB e API Rest",
+                "professor": "Heuber Lima",
+                "matricula_professor": 109,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "18:45 \u2013 19:30",
+                "dia": "Quinta",
+                "disciplina": "Desenvolvimento Mobile 1",
+                "professor": "Bruno Urbano",
+                "matricula_professor": 110,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "18:45 \u2013 19:30",
+                "dia": "Sexta",
+                "disciplina": "Servi\u00e7os WEB e API Rest",
+                "professor": "Heuber Lima",
+                "matricula_professor": 109,
+                "modalidade": "Ass\u00edncrono"
+            },
+            {
+                "horario": "19:30 \u2013 20:15",
+                "dia": "Quarta",
+                "disciplina": "Servi\u00e7os WEB e API Rest",
+                "professor": "Heuber Lima",
+                "matricula_professor": 109,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "19:30 \u2013 20:15",
+                "dia": "Quinta",
+                "disciplina": "Desenvolvimento Mobile 1",
+                "professor": "Bruno Urbano",
+                "matricula_professor": 110,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "19:30 \u2013 20:15",
+                "dia": "Sexta",
+                "disciplina": "Desenvolvimento Mobile 1",
+                "professor": "Bruno Urbano",
+                "matricula_professor": 110,
+                "modalidade": "Ass\u00edncrono"
+            },
+            {
+                "horario": "20:30 \u2013 21:15",
+                "dia": "Quarta",
+                "disciplina": "Servi\u00e7os WEB e API Rest",
+                "professor": "Heuber Lima",
+                "matricula_professor": 109,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "20:30 \u2013 21:15",
+                "dia": "Quinta",
+                "disciplina": "Desenvolvimento Mobile 1",
+                "professor": "Bruno Urbano",
+                "matricula_professor": 110,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "20:30 \u2013 21:15",
+                "dia": "Sexta",
+                "disciplina": "Direitos Humanos e Cidadania - Optativa I",
+                "professor": "Thago Lemes",
+                "matricula_professor": 106,
+                "modalidade": "Ass\u00edncrono"
+            },
+            {
+                "horario": "21:15 \u2013 22:00",
+                "dia": "Quarta",
+                "disciplina": "Servi\u00e7os WEB e API Rest",
+                "professor": "Heuber Lima",
+                "matricula_professor": 109,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "21:15 \u2013 22:00",
+                "dia": "Quinta",
+                "disciplina": "Desenvolvimento Mobile 1",
+                "professor": "Bruno Urbano",
+                "matricula_professor": 110,
+                "modalidade": "S\u00edncrono"
+            }
+        ],
+        "4\u00ba Per\u00edodo": [
+            {
+                "horario": "18:45 \u2013 19:30",
+                "dia": "Ter\u00e7a",
+                "disciplina": "Desenvolvimento Back-End 3",
+                "professor": "Bruno Urbano",
+                "matricula_professor": 110,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "18:45 \u2013 19:30",
+                "dia": "Quarta",
+                "disciplina": "Minera\u00e7\u00e3o de Dados",
+                "professor": "Thago Lemes",
+                "matricula_professor": 106,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "18:45 \u2013 19:30",
+                "dia": "Quinta",
+                "disciplina": "Ger\u00eancia e Governan\u00e7a em Projetos de TI",
+                "professor": "Ricardo Kratz",
+                "matricula_professor": 102,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "18:45 \u2013 19:30",
+                "dia": "Sexta",
+                "disciplina": "Desenvolvimento Back-End 3",
+                "professor": "Bruno Urbano",
+                "matricula_professor": 110,
+                "modalidade": "Ass\u00edncrono"
+            },
+            {
+                "horario": "19:30 \u2013 20:15",
+                "dia": "Ter\u00e7a",
+                "disciplina": "Desenvolvimento Back-End 3",
+                "professor": "Bruno Urbano",
+                "matricula_professor": 110,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "19:30 \u2013 20:15",
+                "dia": "Quarta",
+                "disciplina": "Minera\u00e7\u00e3o de Dados",
+                "professor": "Thago Lemes",
+                "matricula_professor": 106,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "19:30 \u2013 20:15",
+                "dia": "Quinta",
+                "disciplina": "Ger\u00eancia e Governan\u00e7a em Projetos de TI",
+                "professor": "Ricardo Kratz",
+                "matricula_professor": 102,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "19:30 \u2013 20:15",
+                "dia": "Sexta",
+                "disciplina": "Minera\u00e7\u00e3o de Dados",
+                "professor": "Thago Lemes",
+                "matricula_professor": 106,
+                "modalidade": "Ass\u00edncrono"
+            },
+            {
+                "horario": "20:30 \u2013 21:15",
+                "dia": "Ter\u00e7a",
+                "disciplina": "Desenvolvimento Back-End 3",
+                "professor": "Bruno Urbano",
+                "matricula_professor": 110,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "20:30 \u2013 21:15",
+                "dia": "Quarta",
+                "disciplina": "Minera\u00e7\u00e3o de Dados",
+                "professor": "Thago Lemes",
+                "matricula_professor": 106,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "20:30 \u2013 21:15",
+                "dia": "Sexta",
+                "disciplina": "Ger\u00eancia e Governan\u00e7a em Projetos de TI",
+                "professor": "Ricardo Kratz",
+                "matricula_professor": 102,
+                "modalidade": "Ass\u00edncrono"
+            },
+            {
+                "horario": "21:15 \u2013 22:00",
+                "dia": "Ter\u00e7a",
+                "disciplina": "Desenvolvimento Back-End 3",
+                "professor": "Bruno Urbano",
+                "matricula_professor": 110,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "21:15 \u2013 22:00",
+                "dia": "Quarta",
+                "disciplina": "Minera\u00e7\u00e3o de Dados",
+                "professor": "Thago Lemes",
+                "matricula_professor": 106,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "21:15 \u2013 22:00",
+                "dia": "Sexta",
+                "disciplina": "Direito Ambiental - Optativa 2",
+                "professor": "Thago Lemes",
+                "matricula_professor": 106,
+                "modalidade": "Ass\u00edncrono"
+            }
+        ],
+        "5\u00ba Per\u00edodo": [
+            {
+                "horario": "18:45 \u2013 19:30",
+                "dia": "Quarta",
+                "disciplina": "Teste de Vulnerabilidades em Aplica\u00e7\u00f5es Web",
+                "professor": "Vitor Barbosa",
+                "matricula_professor": 104,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "18:45 \u2013 19:30",
+                "dia": "Quinta",
+                "disciplina": "Pol\u00edticas de Seguran\u00e7a",
+                "professor": "Leandro Santos",
+                "matricula_professor": 105,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "18:45 \u2013 19:30",
+                "dia": "Sexta",
+                "disciplina": "Pol\u00edticas de Seguran\u00e7a",
+                "professor": "Leandro Santos",
+                "matricula_professor": 105,
+                "modalidade": "Ass\u00edncrono"
+            },
+            {
+                "horario": "19:30 \u2013 20:15",
+                "dia": "Quarta",
+                "disciplina": "Teste de Vulnerabilidades em Aplica\u00e7\u00f5es Web",
+                "professor": "Vitor Barbosa",
+                "matricula_professor": 104,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "19:30 \u2013 20:15",
+                "dia": "Quinta",
+                "disciplina": "Pol\u00edticas de Seguran\u00e7a",
+                "professor": "Leandro Santos",
+                "matricula_professor": 105,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "19:30 \u2013 20:15",
+                "dia": "Sexta",
+                "disciplina": "Pol\u00edticas de Seguran\u00e7a",
+                "professor": "Leandro Santos",
+                "matricula_professor": 105,
+                "modalidade": "Ass\u00edncrono"
+            },
+            {
+                "horario": "20:30 \u2013 21:15",
+                "dia": "Quarta",
+                "disciplina": "Teste de Vulnerabilidades em Aplica\u00e7\u00f5es Web",
+                "professor": "Vitor Barbosa",
+                "matricula_professor": 104,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "20:30 \u2013 21:15",
+                "dia": "Quinta",
+                "disciplina": "Pol\u00edticas de Seguran\u00e7a",
+                "professor": "Leandro Santos",
+                "matricula_professor": 105,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "21:15 \u2013 22:00",
+                "dia": "Quarta",
+                "disciplina": "Teste de Vulnerabilidades em Aplica\u00e7\u00f5es Web",
+                "professor": "Vitor Barbosa",
+                "matricula_professor": 104,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "21:15 \u2013 22:00",
+                "dia": "Quinta",
+                "disciplina": "Pol\u00edticas de Seguran\u00e7a",
+                "professor": "Leandro Santos",
+                "matricula_professor": 105,
+                "modalidade": "S\u00edncrono"
+            }
+        ]
+    }
+}

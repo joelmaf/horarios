@@ -10,4 +10,4 @@ qdrant-client
 python-dotenv
 pymongo[srv]
 streamlit_option_menu
-wkhtmltopdf
+weasyprint

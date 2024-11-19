@@ -1,0 +1,213 @@
+{
+    "curso": "Banco de Dados",
+    "periodos": {
+        "1\u00ba Per\u00edodo": [
+            {
+                "disciplina": "Organiza\u00e7\u00e3o e Arquitetura de Computadores",
+                "matricula_professor": "102",
+                "professor": "Ricardo Kratz",
+                "horario": "18:45 - 19:30",
+                "dia": "Quinta",
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "disciplina": "Introdu\u00e7\u00e3o ao EaD",
+                "matricula_professor": "112",
+                "professor": "Ariana Ramos",
+                "horario": "18:45 - 19:30",
+                "dia": "Sexta",
+                "modalidade": "Ass\u00edncrono"
+            },
+            {
+                "disciplina": "Organiza\u00e7\u00e3o e Arquitetura de Computadores",
+                "matricula_professor": "102",
+                "professor": "Ricardo Kratz",
+                "horario": "19:30 - 20:15",
+                "dia": "Quinta",
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "disciplina": "L\u00f3gica de Programa\u00e7\u00e3o",
+                "matricula_professor": "106",
+                "professor": "Thiago Lemes",
+                "horario": "20:30 - 21:15",
+                "dia": "Quinta",
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "disciplina": "L\u00f3gica de Programa\u00e7\u00e3o",
+                "matricula_professor": "106",
+                "professor": "Thiago Lemes",
+                "horario": "21:15 - 22:00",
+                "dia": "Quinta",
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "disciplina": "Banco de Dados 1",
+                "matricula_professor": "101",
+                "professor": "Joelma Ferreira",
+                "horario": "22:00 - 22:45",
+                "dia": "Quinta",
+                "modalidade": "S\u00edncrono"
+            }
+        ],
+        "2\u00ba Per\u00edodo": [
+            {
+                "disciplina": "Estat\u00edstica 1",
+                "matricula_professor": "108",
+                "professor": "Fabiana Chagas",
+                "horario": "18:45 - 19:30",
+                "dia": "Quarta",
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "disciplina": "Estat\u00edstica 1",
+                "matricula_professor": "108",
+                "professor": "Fabiana Chagas",
+                "horario": "19:30 - 20:15",
+                "dia": "Quarta",
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "disciplina": "Machine Learning",
+                "matricula_professor": "106",
+                "professor": "Thiago Lemes",
+                "horario": "20:30 - 21:15",
+                "dia": "Quarta",
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "disciplina": "Machine Learning",
+                "matricula_professor": "106",
+                "professor": "Thiago Lemes",
+                "horario": "21:15 - 22:00",
+                "dia": "Quarta",
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "disciplina": "Business Inteligence",
+                "matricula_professor": "109",
+                "professor": "Heuber Lima",
+                "horario": "22:00 - 22:45",
+                "dia": "Quarta",
+                "modalidade": "S\u00edncrono"
+            }
+        ],
+        "3\u00ba Per\u00edodo": [
+            {
+                "disciplina": "Estat\u00edstica 2",
+                "matricula_professor": "106",
+                "professor": "Thiago Lemes",
+                "horario": "18:45 - 19:30",
+                "dia": "Quinta",
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "disciplina": "Optativa 1",
+                "matricula_professor": "nan",
+                "professor": "nan",
+                "horario": "18:45 - 19:30",
+                "dia": "Sexta",
+                "modalidade": "nan"
+            },
+            {
+                "disciplina": "Estat\u00edstica 2",
+                "matricula_professor": "106",
+                "professor": "Thiago Lemes",
+                "horario": "19:30 - 20:15",
+                "dia": "Quinta",
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "disciplina": "Empreendedorismo em Tecnologia da Informa\u00e7\u00e3o",
+                "matricula_professor": "102",
+                "professor": "Ricardo Kratz",
+                "horario": "20:30 - 21:15",
+                "dia": "Quinta",
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "disciplina": "An\u00e1lise Explorat\u00f3ria de Dados e Visualiza\u00e7\u00e3o",
+                "matricula_professor": "109",
+                "professor": "Heuber Lima",
+                "horario": "21:15 - 22:00",
+                "dia": "Quinta",
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "disciplina": "An\u00e1lise Explorat\u00f3ria de Dados e Visualiza\u00e7\u00e3o",
+                "matricula_professor": "109",
+                "professor": "Heuber Lima",
+                "horario": "22:00 - 22:45",
+                "dia": "Quinta",
+                "modalidade": "S\u00edncrono"
+            }
+        ],
+        "4\u00ba Per\u00edodo": [
+            {
+                "disciplina": "An\u00e1lise de S\u00e9ries Temporais ",
+                "matricula_professor": "110",
+                "professor": "Fabiana Rocha",
+                "horario": "18:45 - 19:30",
+                "dia": "Quarta",
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "disciplina": "Atividades Extensionistas",
+                "matricula_professor": "109",
+                "professor": "Heuber Lima",
+                "horario": "18:45 - 19:30",
+                "dia": "Quinta",
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "disciplina": "Optativa 2",
+                "matricula_professor": "nan",
+                "professor": "nan",
+                "horario": "18:45 - 19:30",
+                "dia": "Sexta",
+                "modalidade": "nan"
+            },
+            {
+                "disciplina": "Cloud Computing e Seguran\u00e7a de Aplica\u00e7\u00e3o de IA",
+                "matricula_professor": "105",
+                "professor": "Leandro Santos",
+                "horario": "19:30 - 20:15",
+                "dia": "Quarta",
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "disciplina": "Atividades Extensionistas",
+                "matricula_professor": "101",
+                "professor":  "Heuber Lima",
+                "horario": "19:30 - 20:15",
+                "dia": "Quinta",
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "disciplina": "Cloud Computing e Seguran\u00e7a de Aplica\u00e7\u00e3o de IA",
+                "matricula_professor": "105",
+                "professor": "Leandro Santos",
+                "horario": "20:30 - 21:15",
+                "dia": "Quarta",
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "disciplina": "Banco de Dados n\u00e3o Relacional (noSQL)",
+                "matricula_professor": "102",
+                "professor": "Ricardo Kratz",
+                "horario": "21:15 - 22:00",
+                "dia": "Quarta",
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "disciplina": "Banco de Dados n\u00e3o Relacional (noSQL)",
+                "matricula_professor": "102",
+                "professor": "Ricardo Kratz",
+                "horario": "22:00 - 22:45",
+                "dia": "Quarta",
+                "modalidade": "S\u00edncrono"
+            }
+        ]
+    }
+}

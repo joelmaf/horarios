@@ -16,7 +16,8 @@ def app():
             json.dump(dados, f, indent=4, ensure_ascii=False)
 
     # Interface do Streamlit
-    st.title("Registro de Dados Comuns")
+    st.title("📂:blue[Registro de Dados Comuns]")
+    st.divider()
 
     # Selecionar arquivo para trabalhar
     arquivo_selecionado = st.selectbox("Selecione o arquivo JSON", [

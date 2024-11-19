@@ -15,8 +15,10 @@ st.set_page_config(layout="wide")
 with st.sidebar:
     selected = option_menu(
         "Menu", 
-        ["Montar Horário", "Conflitos entre Cursos", "Horário dos Professores", "Dados Comuns", "Matriz do Curso"], 
-        icons=["calendar", "calendar", "calendar", "database", "clipboard-data"], 
+        #["Montar Horário", "Conflitos entre Cursos", "Horário dos Professores", "Dados Comuns", "Matriz do Curso"], 
+        #icons=["calendar", "calendar", "calendar", "database", "clipboard-data"], 
+        ["Montar Horário", "Horário dos Professores","Relatório de Conflitos"], 
+        icons=["calendar", "calendar", "calendar"], 
         menu_icon="cast", 
         default_index=0
     )
@@ -24,11 +26,11 @@ with st.sidebar:
 # Carregar a página correspondente com base na opção selecionada
 if selected == "Montar Horário":
     registro_agenda.app()
-elif selected == "Conflitos entre Cursos":
-    conflito_entre_cursos.app()
 elif selected == "Horário dos Professores":
     horario_professor.app()
-elif selected == "Dados Comuns":
-    registro_dados_comuns.app()
-elif selected == "Matriz do Curso":
-    registro_matriz_curso.app()
+elif selected == "Relatório de Conflitos":
+    conflito_entre_cursos.app()
+#elif selected == "Dados Comuns":
+#    registro_dados_comuns.app()
+#elif selected == "Matriz do Curso":
+#    registro_matriz_curso.app()

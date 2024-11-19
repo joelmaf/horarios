@@ -1,0 +1,247 @@
+{
+    "curso": "An\u00e1lise e Desenvolvimento de Sistemas",
+    "periodos": {
+        "1\u00ba Per\u00edodo": [
+            {
+                "horario": "18:45 - 19:30",
+                "dia": "Quinta",
+                "disciplina": "Organiza\u00e7\u00e3o e Arquitetura de Computadores",
+                "professor": "Ricardo Kratz",
+                "matricula_professor": 102,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "18:45 - 19:30",
+                "dia": "Sexta",
+                "disciplina": "Introdu\u00e7\u00e3o ao EaD",
+                "professor": "Ariana Ramos",
+                "matricula_professor": 112,
+                "modalidade": "Ass\u00edncrono"
+            },
+            {
+                "horario": "19:30 - 20:15",
+                "dia": "Quinta",
+                "disciplina": "Organiza\u00e7\u00e3o e Arquitetura de Computadores",
+                "professor": "Ricardo Kratz",
+                "matricula_professor": 102,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "20:30 - 21:15",
+                "dia": "Quinta",
+                "disciplina": "L\u00f3gica de Programa\u00e7\u00e3o",
+                "professor": "Thiago Lemes",
+                "matricula_professor": 106,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "21:15 - 22:00",
+                "dia": "Quinta",
+                "disciplina": "L\u00f3gica de Programa\u00e7\u00e3o",
+                "professor": "Thiago Lemes",
+                "matricula_professor": 106,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "22:00 - 22:45",
+                "dia": "Quinta",
+                "disciplina": "Banco de Dados 1",
+                "professor": "Joelma Ferreira",
+                "matricula_professor": 101,
+                "modalidade": "S\u00edncrono"
+            }
+        ],
+        "2\u00ba Per\u00edodo": [
+            {
+                "horario": "18:45 - 19:30",
+                "dia": "Quarta",
+                "disciplina": "Desenvolvimento Front-End 2",
+                "professor": "Murilo Pacheco",
+                "matricula_professor": 107,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "19:30 - 20:15",
+                "dia": "Quarta",
+                "disciplina": "Desenvolvimento Front-End 2",
+                "professor": "Murilo Pacheco",
+                "matricula_professor": 107,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "20:30 - 21:15",
+                "dia": "Quarta",
+                "disciplina": "An\u00e1lise e Projeto de Sistemas",
+                "professor": "Heuber Lima",
+                "matricula_professor": 109,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "21:15 - 22:00",
+                "dia": "Quarta",
+                "disciplina": "An\u00e1lise e Projeto de Sistemas",
+                "professor": "Heuber Lima",
+                "matricula_professor": 109,
+                "modalidade": "S\u00edncrono"
+            }
+        ],
+        "3\u00ba Per\u00edodo": [
+            {
+                "horario": "18:45 - 19:30",
+                "dia": "Quinta",
+                "disciplina": "Desenvolvimento Back-End 2",
+                "professor": "Fabiana Rocha",
+                "matricula_professor": 110,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "18:45 - 19:30",
+                "dia": "Sexta",
+                "disciplina": "Direitos Humanos e Cidadania - Optativa I",
+                "professor": NaN,
+                "matricula_professor": NaN,
+                "modalidade": "Ass\u00edncrono"
+            },
+            {
+                "horario": "19:30 - 20:15",
+                "dia": "Quinta",
+                "disciplina": "Desenvolvimento Back-End 2",
+                "professor": "Fabiana Rocha",
+                "matricula_professor": 110,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "20:30 - 21:15",
+                "dia": "Quinta",
+                "disciplina": "Empreendedorismo em Tecnologia da Informa\u00e7\u00e3o",
+                "professor": "Ricardo Kratz",
+                "matricula_professor": 102,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "21:15 - 22:00",
+                "dia": "Quinta",
+                "disciplina": "Testes de Sistemas",
+                "professor": "Ricardo Kratz",
+                "matricula_professor": 102,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "22:00 - 22:45",
+                "dia": "Quinta",
+                "disciplina": "Testes de Sistemas",
+                "professor": "Ricardo Kratz",
+                "matricula_professor": 102,
+                "modalidade": "S\u00edncrono"
+            }
+        ],
+        "4\u00ba Per\u00edodo": [
+            {
+                "horario": "18:45 - 19:30",
+                "dia": "Quarta",
+                "disciplina": "Padr\u00f5es de Projetos",
+                "professor": "Heuber Lima",
+                "matricula_professor": 109,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "18:45 - 19:30",
+                "dia": "Quinta",
+                "disciplina": "Atividades Extensionistas",
+                "professor": "Heuber Lima",
+                "matricula_professor": 109,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "18:45 - 19:30",
+                "dia": "Sexta",
+                "disciplina": "Direito Ambiental - Optativa 2",
+                "professor": NaN,
+                "matricula_professor": NaN,
+                "modalidade": "Ass\u00edncrono"
+            },
+            {
+                "horario": "19:30 - 20:15",
+                "dia": "Quarta",
+                "disciplina": "Padr\u00f5es de Projetos",
+                "professor": "Heuber Lima",
+                "matricula_professor": 109,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "19:30 - 20:15",
+                "dia": "Quinta",
+                "disciplina": "Atividades Extensionistas",
+                "professor": "Heuber Lima",
+                "matricula_professor": 109,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "20:30 - 21:15",
+                "dia": "Quarta",
+                "disciplina": "Desenvolvimento Mobile 2",
+                "professor": "Murilo Pacheco",
+                "matricula_professor": 107,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "21:15 - 22:00",
+                "dia": "Quarta",
+                "disciplina": "Desenvolvimento Mobile 2",
+                "professor": "Murilo Pacheco",
+                "matricula_professor": 107,
+                "modalidade": "S\u00edncrono"
+            }
+        ],
+        "5\u00ba Per\u00edodo": [
+            {
+                "horario": "18:45 - 19:30",
+                "dia": "Quinta",
+                "disciplina": "Seguran\u00e7a em Cloud e Ambientes Web",
+                "professor": "Leandro Oliveira",
+                "matricula_professor": 105,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "19:30 - 20:15",
+                "dia": "Quinta",
+                "disciplina": "Seguran\u00e7a em Cloud e Ambientes Web",
+                "professor": "Leandro Oliveira",
+                "matricula_professor": 105,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "20:30 - 21:15",
+                "dia": "Quarta",
+                "disciplina": "Pol\u00edticas de Seguran\u00e7a",
+                "professor": "Rodrigo Muniz",
+                "matricula_professor": 111,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "20:30 - 21:15",
+                "dia": "Quinta",
+                "disciplina": "Seguran\u00e7a em Cloud e Ambientes Web",
+                "professor": "Leandro Oliveira",
+                "matricula_professor": 105,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "21:15 - 22:00",
+                "dia": "Quarta",
+                "disciplina": "Pol\u00edticas de Seguran\u00e7a",
+                "professor": "Rodrigo Muniz",
+                "matricula_professor": 111,
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "horario": "21:15 - 22:00",
+                "dia": "Quinta",
+                "disciplina": "Seguran\u00e7a em Cloud e Ambientes Web",
+                "professor": "Leandro Oliveira",
+                "matricula_professor": 105,
+                "modalidade": "S\u00edncrono"
+            }
+        ]
+    }
+}

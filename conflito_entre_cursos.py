@@ -52,7 +52,8 @@ def app():
         return conflitos
 
     # Interface Streamlit
-    st.title("Verificação de Conflitos de Horário entre Cursos")
+    st.title("🚫 :blue[Verificação de Conflitos de Horário entre Cursos]")
+    st.divider()
     st.write("Essa aplicação verifica se há conflitos de horário entre diferentes cursos para o mesmo professor.")
 
     # Especifique o diretório onde estão os arquivos JSON de horários

@@ -1,0 +1,236 @@
+{
+    "disciplinas": [
+        {
+            "id_curso": 106,
+            "nome_curso": "Banco de Dados 1 Ciclo",
+            "id_disciplina": 156,
+            "nome_disciplina": "Introdução ao EaD",
+            "periodo": "1º Período",
+            "carga_horaria": 10
+        },
+        {
+            "id_curso": 106,
+            "nome_curso": "Banco de Dados 1 Ciclo",
+            "id_disciplina": 157,
+            "nome_disciplina": "Matemática Computacional",
+            "periodo": "1º Período",
+            "carga_horaria": 50
+        },
+        {
+            "id_curso": 106,
+            "nome_curso": "Banco de Dados 1 Ciclo",
+            "id_disciplina": 158,
+            "nome_disciplina": "Fundamentos em Data Science",
+            "periodo": "1º Período",
+            "carga_horaria": 60
+        },
+        {
+            "id_curso": 106,
+            "nome_curso": "Banco de Dados 1 Ciclo",
+            "id_disciplina": 159,
+            "nome_disciplina": "Organização e Arquitetura de Computadores",
+            "periodo": "1º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 106,
+            "nome_curso": "Banco de Dados 1 Ciclo",
+            "id_disciplina": 160,
+            "nome_disciplina": "Lógica de Programação",
+            "periodo": "1º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 106,
+            "nome_curso": "Banco de Dados 1 Ciclo",
+            "id_disciplina": 161,
+            "nome_disciplina": "Banco de Dados 2º Ciclo 1",
+            "periodo": "1º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 106,
+            "nome_curso": "Banco de Dados 1 Ciclo",
+            "id_disciplina": 162,
+            "nome_disciplina": "Estatística 1",
+            "periodo": "2º Período",
+            "carga_horaria": 60
+        },
+        {
+            "id_curso": 106,
+            "nome_curso": "Banco de Dados 1 Ciclo",
+            "id_disciplina": 163,
+            "nome_disciplina": "Machine Learning",
+            "periodo": "2º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 106,
+            "nome_curso": "Banco de Dados 1 Ciclo",
+            "id_disciplina": 164,
+            "nome_disciplina": "Business Inteligence",
+            "periodo": "2º Período",
+            "carga_horaria": 60
+        },
+        {
+            "id_curso": 106,
+            "nome_curso": "Banco de Dados 1 Ciclo",
+            "id_disciplina": 165,
+            "nome_disciplina": "Estruturas de Dados",
+            "periodo": "2º Período",
+            "carga_horaria":80
+        },
+        {
+            "id_curso": 106,
+            "nome_curso": "Banco de Dados 1 Ciclo",
+            "id_disciplina": 166,
+            "nome_disciplina": "Banco de Dados 2º Ciclo 2",
+            "periodo": "2º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 106,
+            "nome_curso": "Banco de Dados 1 Ciclo",
+            "id_disciplina": 167,
+            "nome_disciplina": "Estatística 2",
+            "periodo": "3º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 106,
+            "nome_curso": "Banco de Dados 1 Ciclo",
+            "id_disciplina": 168,
+            "nome_disciplina": "Redes Neurais",
+            "periodo": "3º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 106,
+            "nome_curso": "Banco de Dados 1 Ciclo",
+            "id_disciplina": 169,
+            "nome_disciplina": "Análise Exploratória de Dados e Visualização",
+            "periodo": "3º Período",
+            "carga_horaria": 60
+        },
+        {
+            "id_curso": 106,
+            "nome_curso": "Banco de Dados 1 Ciclo",
+            "id_disciplina": 170,
+            "nome_disciplina": "Métodos de tratamento de dados",
+            "periodo": "3º Período",
+            "carga_horaria": 60
+        },
+        {
+            "id_curso": 106,
+            "nome_curso": "Banco de Dados 1 Ciclo",
+            "id_disciplina": 171,
+            "nome_disciplina": "Empreendedorismo em Tecnologia da Informação",
+            "periodo": "3º Período",
+            "carga_horaria": 40
+        },
+        {
+            "id_curso": 106,
+            "nome_curso": "Banco de Dados 1 Ciclo",
+            "id_disciplina": 172,
+            "nome_disciplina": "Optativa 1",
+            "periodo": "3º Período",
+            "carga_horaria": 40
+        },
+        {
+            "id_curso": 106,
+            "nome_curso": "Banco de Dados 1 Ciclo",
+            "id_disciplina": 173,
+            "nome_disciplina": "Deep Learning",
+            "periodo": "4º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 106,
+            "nome_curso": "Banco de Dados 1 Ciclo",
+            "id_disciplina": 174,
+            "nome_disciplina": "Análise de Séries Temporais ",
+            "periodo": "4º Período",
+            "carga_horaria": 60
+        },
+        {
+            "id_curso": 106,
+            "nome_curso": "Banco de Dados 1 Ciclo",
+            "id_disciplina": 175,
+            "nome_disciplina": "Banco de Dados 2º Ciclo não Relacional (noSQL)",
+            "periodo": "4º Período",
+            "carga_horaria": 60
+        },
+        {
+            "id_curso": 106,
+            "nome_curso": "Banco de Dados 1 Ciclo",
+            "id_disciplina": 176,
+            "nome_disciplina": "Cloud Computing e Segurança de Aplicação de IA",
+            "periodo": "4º Período",
+            "carga_horaria": 40
+        },
+        {
+            "id_curso": 106,
+            "nome_curso": "Banco de Dados 1 Ciclo",
+            "id_disciplina": 177,
+            "nome_disciplina": "Linguagem Avançada de Banco de Dados 2º Ciclo",
+            "periodo": "4º Período",
+            "carga_horaria": 60
+        },
+        {
+            "id_curso": 106,
+            "nome_curso": "Banco de Dados 1 Ciclo",
+            "id_disciplina": 178,
+            "nome_disciplina": "Optativa 2",
+            "periodo": "4º Período",
+            "carga_horaria": 40
+        },
+        {
+            "id_curso": 106,
+            "nome_curso": "Banco de Dados 1 Ciclo",
+            "id_disciplina": 184,
+            "nome_disciplina": "Atividades Extensionistas",
+            "periodo": "4º Período",
+            "carga_horaria": 204
+        },
+        {
+            "id_curso": 106,
+            "nome_curso": "Banco de Dados 1 Ciclo",
+            "id_disciplina": 179,
+            "nome_disciplina": "Storytelling",
+            "periodo": "5º Período",
+            "carga_horaria": 56
+        },
+        {
+            "id_curso": 106,
+            "nome_curso": "Banco de Dados 1 Ciclo",
+            "id_disciplina": 180,
+            "nome_disciplina": "Administração de Banco de Dados 2º Ciclo (DataOps)",
+            "periodo": "5º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 106,
+            "nome_curso": "Banco de Dados 1 Ciclo",
+            "id_disciplina": 181,
+            "nome_disciplina": "Projeto Integrador: Solução de Inteligência Artificial Baseada em Dados",
+            "periodo": "5º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 106,
+            "nome_curso": "Banco de Dados 1 Ciclo",
+            "id_disciplina": 182,
+            "nome_disciplina": "Modelos Generativos",
+            "periodo": "5º Período",
+            "carga_horaria": 80
+        },
+        {
+            "id_curso": 106,
+            "nome_curso": "Banco de Dados 1 Ciclo",
+            "id_disciplina": 183,
+            "nome_disciplina": "Big Data e Deployment de Modelos",
+            "periodo": "5º Período",
+            "carga_horaria": 60
+        }
+    ]
+}

@@ -28,7 +28,9 @@ def app():
     nomes_cursos = [curso['nome_curso'] for curso in cursos['cursos']]
 
     # Título da página
-    st.title('Carga da Matriz de Curso')
+ 
+    st.title("🗓️ :blue[Carga da Matriz de Curso]")
+    st.divider()
 
     # Selecionar o curso
     nome_curso = st.selectbox("Selecione o Curso", nomes_cursos)

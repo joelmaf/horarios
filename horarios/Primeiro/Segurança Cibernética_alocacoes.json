@@ -1,0 +1,155 @@
+{
+    "curso": "Seguran\u00e7a Cibern\u00e9tica",
+    "periodos": {
+        "1\u00ba Per\u00edodo": [
+            {
+                "disciplina": "Organiza\u00e7\u00e3o e Arquitetura de Computadores",
+                "matricula_professor": "102",
+                "professor": "Ricardo Kratz",
+                "horario": "18:45 - 19:30",
+                "dia": "Quinta",
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "disciplina": "Introdu\u00e7\u00e3o ao EaD",
+                "matricula_professor": "112",
+                "professor": "Ariana Ramos",
+                "horario": "18:45 - 19:30",
+                "dia": "Sexta",
+                "modalidade": "Ass\u00edncrono"
+            },
+            {
+                "disciplina": "Organiza\u00e7\u00e3o e Arquitetura de Computadores",
+                "matricula_professor": "102",
+                "professor": "Ricardo Kratz",
+                "horario": "19:30 - 20:15",
+                "dia": "Quinta",
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "disciplina": "L\u00f3gica de Programa\u00e7\u00e3o",
+                "matricula_professor": "106",
+                "professor": "Thiago Lemes",
+                "horario": "20:30 - 21:15",
+                "dia": "Quinta",
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "disciplina": "L\u00f3gica de Programa\u00e7\u00e3o",
+                "matricula_professor": "106",
+                "professor": "Thiago Lemes",
+                "horario": "21:15 - 22:00",
+                "dia": "Quinta",
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "disciplina": "Banco de Dados 1",
+                "matricula_professor": "101",
+                "professor": "Joelma Ferreira",
+                "horario": "22:00 - 22:45",
+                "dia": "Quinta",
+                "modalidade": "S\u00edncrono"
+            }
+        ],
+        "2\u00ba Per\u00edodo": [
+            {
+                "disciplina": "Redes de Computadores",
+                "matricula_professor": "103",
+                "professor": "Rodolpho Stach",
+                "horario": "18:45 - 19:30",
+                "dia": "Quarta",
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "disciplina": "Atividades Extensionistas",
+                "matricula_professor": "109",
+                "professor": "Heuber Lima",
+                "horario": "18:45 - 19:30",
+                "dia": "Quinta",
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "disciplina": "Redes de Computadores",
+                "matricula_professor": "103",
+                "professor": "Rodolpho Stach",
+                "horario": "19:30 - 20:15",
+                "dia": "Quarta",
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "disciplina": "Atividades Extensionistas",
+                "matricula_professor": "109",
+                "professor": "Heuber Lima",
+                "horario": "19:30 - 20:15",
+                "dia": "Quinta",
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "disciplina": "Pol\u00edticas de Seguran\u00e7a",
+                "matricula_professor": "111",
+                "professor": "Rodrigo Muniz",
+                "horario": "20:30 - 21:15",
+                "dia": "Quarta",
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "disciplina": "Pol\u00edticas de Seguran\u00e7a",
+                "matricula_professor": "111",
+                "professor": "Rodrigo Muniz",
+                "horario": "21:15 - 22:00",
+                "dia": "Quarta",
+                "modalidade": "S\u00edncrono"
+            }
+        ],
+        "3\u00ba Per\u00edodo": [
+            {
+                "disciplina": "Ethical Hacking",
+                "matricula_professor": "111",
+                "professor": "Rodrigo Muniz",
+                "horario": "18:45 - 19:30",
+                "dia": "Quinta",
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "disciplina": "Optativa 1",
+                "matricula_professor": "nan",
+                "professor": "nan",
+                "horario": "18:45 - 19:30",
+                "dia": "Sexta",
+                "modalidade": "Ass\u00edncrono"
+            },
+            {
+                "disciplina": "Ethical Hacking",
+                "matricula_professor": "111",
+                "professor": "Rodrigo Muniz",
+                "horario": "19:30 - 20:15",
+                "dia": "Quinta",
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "disciplina": "Empreendedorismo em Tecnologia da Informa\u00e7\u00e3o",
+                "matricula_professor": "102",
+                "professor": "Ricardo Kratz",
+                "horario": "20:30 - 21:15",
+                "dia": "Quinta",
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "disciplina": "Observabilidade e Monitoramento",
+                "matricula_professor": "103",
+                "professor": "Rodolpho Stach",
+                "horario": "21:15 - 22:00",
+                "dia": "Quinta",
+                "modalidade": "S\u00edncrono"
+            },
+            {
+                "disciplina": "Observabilidade e Monitoramento",
+                "matricula_professor": "103",
+                "professor": "Rodolpho Stach",
+                "horario": "22:00 - 22:45",
+                "dia": "Quinta",
+                "modalidade": "S\u00edncrono"
+            }
+        ]
+    }
+}
