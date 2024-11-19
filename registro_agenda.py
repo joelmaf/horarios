@@ -8,17 +8,10 @@ from openpyxl import Workbook
 import tempfile
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
-from fpdf import FPDF
+from weasyprint import HTML
+from io import BytesIO
 
 def app():     
-
-    def create_pdf():
-        pdf = FPDF()
-        pdf.add_page()
-        pdf.set_font("Arial", size=12)
-        pdf.cell(200, 10, txt="PDF Gerado no Streamlit Cloud", ln=True, align='C')
-        pdf.cell(200, 10, txt="Este é um exemplo de conteúdo!", ln=True, align='L')
-        return pdf.output(dest='S').encode('latin1')  # Retorna o PDF como bytes
 
     # Função para carregar arquivos JSON
     def carregar_json(arquivo):
@@ -517,17 +510,22 @@ def app():
                     html += tabela.to_html(escape=False, classes="schedule-table")
 
     
-        options = {
-            "orientation": "Landscape"
-        }
+        #options = {
+        #    "orientation": "Landscape"
+        #}
         # Gerar o PDF usando pdfkit e o HTML construído
-        with tempfile.NamedTemporaryFile(delete=True, suffix=".pdf") as tmp_pdf:
-            pdfkit.from_string(html, tmp_pdf.name, options=options)
-            tmp_pdf.seek(0)  # Retornar para o início do arquivo temporário
-            pdf_buffer.write(tmp_pdf.read())  # Lê o conteúdo para o buffer
+        #with tempfile.NamedTemporaryFile(delete=True, suffix=".pdf") as tmp_pdf:
+        #    pdfkit.from_string(html, tmp_pdf.name, options=options)
+        #    tmp_pdf.seek(0)  # Retornar para o início do arquivo temporário
+        #    pdf_buffer.write(tmp_pdf.read())  # Lê o conteúdo para o buffer
 
-        pdf_buffer.seek(0)  # Volta para o início do buffer
-        return pdf_buffer      
+        #pdf_buffer.seek(0)  # Volta para o início do buffer
+        #return pdf_buffer      
+
+        pdf_file = BytesIO()
+        HTML(string=html).write_pdf(pdf_file)
+        pdf_file.seek(0)  # Retornar o ponteiro para o início
+        return pdf_file
 
     def escolhe_curso_periodo(cursos, periodos_df):
         col1, col2 = st.columns(2)
@@ -582,13 +580,23 @@ def app():
             st.warning("Por favor, marque a confirmação para visualizar o botão de exclusão.")
 
     def escolhe_baixar_pdf(curso_selecionado):
+        #if st.button("Baixar PDF do Horário"):
+        #    pdf_file = gerar_pdf_tabelas_periodo(curso_selecionado)
+        #    st.download_button(
+        #        label="Download PDF",
+        #        data=pdf_file,
+        #       file_name="horarios_geral.pdf",
+        #        mime="application/pdf"
+        #    )
+
+
         if st.button("Baixar PDF do Horário"):
-            pdf_file = gerar_pdf_tabelas_periodo(curso_selecionado)
+            pdf_bytes = gerar_pdf_tabelas_periodo(curso_selecionado)
             st.download_button(
-                label="Download PDF",
-                data=pdf_file,
+                label="Baixar PDF",
+                data=pdf_bytes,
                 file_name="horarios_geral.pdf",
-                mime="application/pdf"
+                mime="application/pdf",
             )
 
     def escolher_gerar_excel():
@@ -642,11 +650,4 @@ def app():
     escolhe_exclusao()
     escolher_gerar_excel()
     
-    if st.button("pdfkit"):
-        pdf_bytes = create_pdf()
-        st.download_button(
-            label="Baixar PDF",
-            data=pdf_bytes,
-            file_name="exemplo.pdf",
-            mime="application/pdf"
-        )
+  
