@@ -279,6 +279,7 @@ def app():
             key='confirmacao_exclusao'
         )
         
+
         
             # Adicionar estilo CSS para as colunas da tabela
     
@@ -297,6 +298,20 @@ def app():
             "Desejo carregar uma nova planilha de horário que substituirá o atual (CUIDADO: não tem como recuperar o horário antigo.)",
             key='confirmacao_upload'
         )
+
+        # Caminho para o arquivo
+        arquivo = "horario_template.xlsx"
+
+        try:
+            with open(arquivo, "rb") as f:
+                st.download_button(
+                    label="Clique aqui para baixar a planilha template a ser usada.",
+                    data=f,
+                    file_name="horario_template.xlsx",
+                    mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                )
+        except FileNotFoundError:
+            st.error("O arquivo não foi encontrado.")
 
     def adicionar_css_customizado():
         st.markdown(
