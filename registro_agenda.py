@@ -10,6 +10,7 @@ from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 from weasyprint import HTML
 from io import BytesIO
+import base64
 
 def app():     
 
@@ -522,10 +523,12 @@ def app():
         #pdf_buffer.seek(0)  # Volta para o início do buffer
         #return pdf_buffer      
 
-        pdf_file = BytesIO()
-        HTML(string=html).write_pdf(pdf_file)
-        pdf_file.seek(0)  # Retornar o ponteiro para o início
-        return pdf_file
+        #pdf_file = BytesIO()
+        #HTML(string=html).write_pdf(pdf_file)
+        #pdf_file.seek(0)  # Retornar o ponteiro para o início
+        #return pdf_file
+
+        return html
 
     def escolhe_curso_periodo(cursos, periodos_df):
         col1, col2 = st.columns(2)
@@ -590,14 +593,25 @@ def app():
         #    )
 
 
+        #if st.button("Baixar PDF do Horário"):
+        #    pdf_bytes = gerar_pdf_tabelas_periodo(curso_selecionado)
+        #    st.download_button(
+        #        label="Baixar PDF",
+        #        data=pdf_bytes,
+        #        file_name="horarios_geral.pdf",
+        #        mime="application/pdf",
+        #    )
+
         if st.button("Baixar PDF do Horário"):
-            pdf_bytes = gerar_pdf_tabelas_periodo(curso_selecionado)
+            html = gerar_pdf_tabelas_periodo(curso_selecionado)
+            # Converter para um formato baixável
+            html_bytes = html.encode('utf-8')
             st.download_button(
-                label="Baixar PDF",
-                data=pdf_bytes,
-                file_name="horarios_geral.pdf",
-                mime="application/pdf",
-            )
+                label="Baixar HTML",
+                data=html_bytes,
+                file_name=f"{curso_selecionado}_horario.html",
+                mime="text/html"
+    )
 
     def escolher_gerar_excel():
         st.write("\n")
