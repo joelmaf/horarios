@@ -295,7 +295,7 @@ def app():
 
         # Checkbox de confirmação
         st.checkbox(
-            "Desejo carregar uma nova planilha de horário que substituirá o atual (CUIDADO: não tem como recuperar o horário antigo.)",
+            "(OPCIONAL) Desejo carregar uma planilha com o horário já montado que substituirá o atual (CUIDADO: não tem como recuperar o horário antigo.)",
             key='confirmacao_upload'
         )
 
@@ -305,11 +305,12 @@ def app():
         try:
             with open(arquivo, "rb") as f:
                 st.download_button(
-                    label="Clique aqui para baixar a planilha template a ser usada.",
+                    label="Baixe a planilha template.",
                     data=f,
                     file_name="horario_template.xlsx",
                     mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
                 )
+                st.warning("Se for usar a planilha, não altere sua formatação, apenas acrescente as disciplinas (na aba Disciplinas), conforme está na Matriz, e monte o horário na aba Dados.")
         except FileNotFoundError:
             st.error("O arquivo não foi encontrado.")
 
