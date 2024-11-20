@@ -597,7 +597,7 @@ def app():
         #        mime="application/pdf",
         #    )
 
-        if st.button("Baixar PDF do Horário"):
+        if st.button("Baixar Horário"):
             html = gerar_pdf_tabelas_periodo(curso_selecionado)
             html_bytes = html.encode('utf-8')
             st.download_button(

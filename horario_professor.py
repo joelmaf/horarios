@@ -191,21 +191,9 @@ def app():
         </body>
         </html>
         """
-        #pdf_file = f"{professor_selecionado}_horarios.pdf" if not curso_selecionado else f"{professor_selecionado}_{curso_selecionado}_horarios.pdf"
-        #pdfkit.from_string(html, pdf_file)
-        #return pdf_file
 
-        options = {
-            "orientation": "Landscape"
-        }
-        # Cria um arquivo temporário para o PDF e lê para o buffer de memória
-        with tempfile.NamedTemporaryFile(delete=True, suffix=".pdf") as tmp_pdf:
-            pdfkit.from_string(html, tmp_pdf.name, options=options)
-            tmp_pdf.seek(0)  # Retorna ao início do arquivo temporário
-            pdf_buffer = io.BytesIO(tmp_pdf.read())  # Lê o conteúdo para BytesIO
         
-        pdf_buffer.seek(0)  # Retorna ao início do buffer
-        return pdf_buffer
+        return html
 
 
     # Exibir a tabela consolidada do professor
@@ -219,14 +207,15 @@ def app():
         st.write(tabela_professor.to_html(escape=False, classes="schedule-table"), unsafe_allow_html=True)
 
 
-        if st.button("Baixar PDF"):
-            pdf_buffer = gerar_pdf_tabela(tabela_professor, professor_selecionado, curso_selecionado, ciclo)
+        if st.button("Baixar Horário"):
+            html = gerar_pdf_tabela(tabela_professor, professor_selecionado, curso_selecionado, ciclo)
+            html_bytes = html.encode('utf-8')
             st.download_button(
-                label="Download PDF",
-                data=pdf_buffer,
-                file_name=f"{professor_selecionado}_horarios.pdf",
-                mime="application/pdf"
-            )
+                label="Baixar HTML",
+                data=html_bytes,
+                file_name=f"{professor_selecionado}_horario.html",
+                mime="text/html"
+    )
 
 
 #####################################################################################################################################
