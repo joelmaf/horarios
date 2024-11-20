@@ -3,14 +3,9 @@ import pandas as pd
 import io
 import json
 import os
-import pdfkit  # Certifique-se de que o pdfkit está instalado
-from openpyxl import Workbook
-import tempfile
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
-from weasyprint import HTML
-from io import BytesIO
-import base64
+
 
 def app():     
 
@@ -604,7 +599,6 @@ def app():
 
         if st.button("Baixar PDF do Horário"):
             html = gerar_pdf_tabelas_periodo(curso_selecionado)
-            # Converter para um formato baixável
             html_bytes = html.encode('utf-8')
             st.download_button(
                 label="Baixar HTML",
