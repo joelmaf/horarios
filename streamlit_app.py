@@ -17,8 +17,8 @@ with st.sidebar:
         "Menu", 
         #["Montar Horário", "Conflitos entre Cursos", "Horário dos Professores", "Dados Comuns", "Matriz do Curso"], 
         #icons=["calendar", "calendar", "calendar", "database", "clipboard-data"], 
-        ["Montar Horário", "Horário dos Professores","Relatório de Conflitos"], 
-        icons=["calendar", "calendar", "calendar"], 
+        ["Montar Horário", "Horário dos Professores"], 
+        icons=["calendar", "calendar"], 
         menu_icon="cast", 
         default_index=0
     )
@@ -28,8 +28,8 @@ if selected == "Montar Horário":
     registro_agenda.app()
 elif selected == "Horário dos Professores":
     horario_professor.app()
-elif selected == "Relatório de Conflitos":
-    conflito_entre_cursos.app()
+#elif selected == "Relatório de Conflitos":
+#    conflito_entre_cursos.app()
 #elif selected == "Dados Comuns":
 #    registro_dados_comuns.app()
 #elif selected == "Matriz do Curso":
