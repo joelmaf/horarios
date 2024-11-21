@@ -16,7 +16,6 @@ def app():
                 return json.load(json_file)
         return None
 
-
     def conectar_base():
         if "mongo_client" not in st.session_state:
             uri = "mongodb+srv://jmfnet2004:xWYCXScI3Nfa4VJn@cluster0.cl7c2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
@@ -193,7 +192,8 @@ def app():
                 for day in tabela.columns:
                     cell_content = tabela.loc[time, day]
                     if cell_content:
-                        disciplina, matricula_professor, professor, modalidade = cell_content.split(' / ')
+                        disciplina, professor, modalidade = cell_content.split(' / ')
+                        matricula_professor, professor = professor.split(' - ')
                         data_para_salvar["periodos"][periodo].append({
                             "disciplina": disciplina,
                             "matricula_professor": matricula_professor,
@@ -207,6 +207,26 @@ def app():
         clear_collection('ipog',colecao)
         insert_data(data_para_salvar, 'ipog', colecao)
 
+
+    # Função para verificar se há choque de horários para um mesmo professor (usando matrícula)
+    def verificar_choque(course_id):
+        conflitos = {}
+        conflitos_detalhes = []
+        for period, agenda in st.session_state['registros'][course_id].items():
+            for time in horarios:
+                for day in agenda.columns:
+                    cell_content = agenda.loc[time, day]
+                    if cell_content:
+                        matricula_professor = cell_content.split(' / ')[1]
+                        if (day, time) not in conflitos:
+                            conflitos[(day, time)] = (matricula_professor, period)
+                        else:
+                            if conflitos[(day, time)][0] == matricula_professor:
+                                conflitos_detalhes.append((day, time, matricula_professor, conflitos[(day, time)][1], period))
+        return conflitos_detalhes
+
+
+
     def registrar_horario():
         # Inicializar 'registros' no session_state para o curso selecionado, se não existir
         if id_curso_selecionado not in st.session_state['registros']:
@@ -217,6 +237,26 @@ def app():
         
         salvar_horario(id_curso_selecionado, curso_selecionado)
        
+
+        # Verificar conflitos
+        conflitos_detalhes = verificar_choque(id_curso_selecionado)
+        if conflitos_detalhes:
+            for i, conflito in enumerate(conflitos_detalhes):
+                matricula_professor = conflito[2]
+                nome_professor = professores[professores['matricula'] == int(matricula_professor)]['nome_professor'].values[0]
+                conflito_key = f"{matricula_professor}_{conflito[0]}_{conflito[1]}_{i}"
+
+                # Verificar se o conflito não está na sessão ou se a decisão é marcada como "Conflito"
+                if conflito_key not in st.session_state['decisoes'] or st.session_state['decisoes'][conflito_key] == "Conflito":
+                    st.error(
+                        f"Conflito de horário: O(A) professor(a) {nome_professor} (Matrícula: {matricula_professor}) está alocado(a) "
+                        f"no {conflito[3]} e {conflito[4]} para o mesmo horário ({conflito[0]} - {conflito[1]}) no curso {curso_selecionado}."
+                    )
+        else:
+            st.success("Horário registrado com sucesso.")
+
+
+
     def limpar_secao_ao_trocar_curso():
         st.session_state['agendas'] = {}
         st.session_state['registros'] = {}
@@ -408,10 +448,11 @@ def app():
                             if pd.notna(cell_content) and cell_content:
                                 # Extrair apenas disciplina e nome do professor
                                 parts = cell_content.split(" / ")
+                                parts_prof = parts[1].split(" - ")
                                 if len(parts) >= 2:
                                     disciplina = parts[0]
-                                    professor = parts[2]
-                                    modalidade = parts[3]
+                                    professor = parts_prof[1]
+                                    modalidade = parts[2]
                                     tabela.loc[time, day] = f"{disciplina} </br> {professor} </br> {modalidade}"
 
                     # Exibir a tabela estilizada
@@ -440,10 +481,11 @@ def app():
                 if cell_content:
                     
                     parts = cell_content.split(" / ")
+                    parts_prof = parts[1].split(" - ")
                     disciplina = parts[0]
-                    matricula = parts[1]
-                    professor = parts[2]
-                    modalidade = parts[3]
+                    matricula = parts_prof[0]
+                    professor = parts_prof[1]
+                    modalidade = parts[2]
                     data = f"{disciplina} </br> {professor} ({matricula}) </br> {modalidade}"
                     
                     cols[i + 1].markdown(f"<div class='schedule'>{data}</div>", unsafe_allow_html=True)
@@ -511,10 +553,14 @@ def app():
                             cell_content = tabela.loc[time, day]
                             if pd.notna(cell_content) and cell_content:
                                 parts = cell_content.split(" / ")
+                                parts_prof = parts[1].split(" - ")
+                                st.write(parts)
+                                st.write(parts_prof)
+
                                 if len(parts) >= 2:
                                     disciplina = parts[0]
-                                    professor = parts[2]
-                                    modalidade = parts[3]
+                                    professor = parts_prof[1]
+                                    modalidade = parts[2]
                                     tabela.loc[time, day] = f"{disciplina} </br> {professor} </br> {modalidade}"
 
                     # Adicionar a tabela ao HTML
