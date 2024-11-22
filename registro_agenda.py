@@ -214,12 +214,10 @@ def app():
         clear_collection('ipog',colecao)
         insert_data(data_para_salvar, 'ipog', colecao)
 
-
-    # Função para verificar se há choque de horários para um mesmo professor (usando matrícula)
-    def verificar_conflitos_interno(course_id):
+    def seleciona_conflitos(course_id):
         conflitos = {}
         conflitos_detalhes = []
-        
+
         for period, agenda in st.session_state['registros'][course_id].items():
             for time in horarios:
                 for day in agenda.columns:
@@ -232,8 +230,12 @@ def app():
                         else:
                             if conflitos[(day, time)][0] == matricula_professor:
                                 conflitos_detalhes.append((day, time, matricula_professor, conflitos[(day, time)][1], period))
-        
+        return conflitos_detalhes
+    
+    # Função para verificar se há choque de horários para um mesmo professor (usando matrícula)
+    def verificar_conflitos_interno(course_id):
 
+        conflitos_detalhes = seleciona_conflitos(course_id)
         if conflitos_detalhes:
             for i, conflito in enumerate(conflitos_detalhes):
                 matricula_professor = conflito[2]
@@ -370,7 +372,8 @@ def app():
                 width: 100%;
                 word-wrap: break-word;
                 border-collapse: collapse;
-                font-size: 10px; 
+                font-size: 10px;
+                text-align: center;
             }
             .schedule-table th, .schedule-table td {
                 border: 1px solid #ddd;
@@ -380,6 +383,7 @@ def app():
                 width: 100px;
                 white-space: pre-wrap;
                 word-wrap: break-word;
+                text-align: center;
             }
             .schedule-table th {
                 background-color: #f2f2f2;
@@ -394,10 +398,12 @@ def app():
             .conflito {
                 background-color: #F08080;
                 color: black;
+                text-align: center;
             }
             .fusao {
                 background-color: #87CEEB;
                 color: black;
+                text-align: center;
             }
     
 
@@ -465,16 +471,25 @@ def app():
                                         modalidade = parts[3]
                                     tabela.loc[time, day] = f"{disciplina} </br> {professor} </br> {modalidade}"
 
-                    # Exibir a tabela estilizada
+
+                    conflitos_detalhes = seleciona_conflitos(id_curso_selecionado)
+                    if conflitos_detalhes:
+                        for i, conflito in enumerate(conflitos_detalhes):
+                            day, time, matricula_professor, *periodos = conflito  # Captura todos os períodos em conflito
+                            conflito_key = f"{matricula_professor}_{day}_{time}"
+                        
+                            # Verifica se a decisão está armazenada no session_state e obtém apenas o tipo de decisão (Conflito ou Fusão)
+                            tipo_conflito = st.session_state['decisoes'].get(conflito_key, {}).get("Tipo", "Conflito")
+                            
+                            # Define a classe de estilo com base no tipo de conflito
+                            classe_estilo = "fusao" if tipo_conflito == "Fusão" else "conflito"
+
+                            # Aplicar o estilo somente se a condição for satisfeita
+                            if periodo in periodos and time in tabela.index and day in tabela.columns:
+                                tabela.loc[time, day] = f"<div class='{classe_estilo}'>{tabela.loc[time, day]}</div>"
+                               
+
                     st.write(f"**Período: {periodo}**")
-                    #st.write(tabela)
-                    #st.data_editor(tabela)
-                    #st.dataframe(tabela,
-                    #        column_config={
-                    #            "widgets": st.column_config.Column(
-                    #                width="small"
-                    #            )
-                    #        })
                     st.write(tabela.to_html(escape=False, classes="schedule-table"), unsafe_allow_html=True)
 
     def renderizar_agenda(id_curso_selecionado, periodo_selecionado):
